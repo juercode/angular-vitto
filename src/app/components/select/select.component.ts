@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+/**
+This is a Vittoria component file in Angular that includes a dropdown selector for selecting a time period. 
+ */
+
 @Component({
   selector: 'app-select',
   templateUrl: './select.component.html',

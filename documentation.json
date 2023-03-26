@@ -1,0 +1,2641 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "User",
+            "id": "interface-User-9c7e5f1bbbab702cb032307d130876cb68969b0cd4eedef32a0c8cad8081a54e5f8f577ed6ad4539c1b99a1d246cb34031d198c2ea8eba440e64e91b14f01fdc",
+            "file": "src/stories/User.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface User {}\n",
+            "properties": [],
+            "indexSignatures": [],
+            "methods": []
+        }
+    ],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-7d3dbac2f7260a62eb86f7b0e9d8973ab7ac7e43807238d4adf32e94630ca3efee089bca60769e3d6c89b091ebfbab1cd75de4941ad383f8e966d4f0ab8defa0",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [
+                "./app.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'project'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 10
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.css']\n})\nexport class AppComponent {\n\n  title = 'project';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./app.component.css"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div>\n  <router-outlet></router-outlet>\n</div>\n\n\n"
+        },
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-4ef205c97a334c309aa4001c8ab4a6d9571dcae18d0e85aaf0d367467ab5d3a9f13ab3573726f1fcb409bc9b49894dadfb80b1bbe1b6ba7041455ad9d4922004",
+            "file": "src/stories/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-button",
+            "styleUrls": [
+                "./button.css"
+            ],
+            "styles": [],
+            "template": "<button   type=\"button\"\n   (click)=\"onClick.emit($event)\"\n   [ngClass]=\"classes\"\n   [ngStyle]=\"{ 'background-color': backgroundColor }\"\n >\n   {{ label }}\n </button>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "backgroundColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nWhat background color to use\n",
+                    "description": "<p>What background color to use</p>\n",
+                    "line": 26,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "pos": 711,
+                            "end": 724,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 325,
+                            "tagName": {
+                                "pos": 712,
+                                "end": 720,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "required"
+                            },
+                            "comment": ""
+                        }
+                    ],
+                    "rawdescription": "\n\nButton contents\n\n",
+                    "description": "<p>Button contents</p>\n",
+                    "line": 40,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "primary",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nIs this the principal call to action on the page?\n",
+                    "description": "<p>Is this the principal call to action on the page?</p>\n",
+                    "line": 20,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nHow large should the button be?\n",
+                    "description": "<p>How large should the button be?</p>\n",
+                    "line": 32,
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nOptional click handler\n",
+                    "description": "<p>Optional click handler</p>\n",
+                    "line": 46,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  template: ` <button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\"\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\n  >\n    {{ label }}\n  </button>`,\n  styleUrls: ['./button.css'],\n})\nexport default class ButtonComponent {\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input()\n  primary = false;\n\n  /**\n   * What background color to use\n   */\n  @Input()\n  backgroundColor?: string;\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-button {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  border: 0;\n  border-radius: 3em;\n  cursor: pointer;\n  display: inline-block;\n  line-height: 1;\n}\n.storybook-button--primary {\n  color: white;\n  background-color: #1ea7fd;\n}\n.storybook-button--secondary {\n  color: #333;\n  background-color: transparent;\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n}\n.storybook-button--small {\n  font-size: 12px;\n  padding: 10px 16px;\n}\n.storybook-button--medium {\n  font-size: 14px;\n  padding: 11px 20px;\n}\n.storybook-button--large {\n  font-size: 16px;\n  padding: 12px 24px;\n}\n",
+                    "styleUrl": "./button.css"
+                }
+            ],
+            "stylesData": "",
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 48
+                    }
+                }
+            }
+        },
+        {
+            "name": "CaricadocumentoComponent",
+            "id": "component-CaricadocumentoComponent-ea165eb0fc044fdea8d79e851d61c9a41ebdbfd882294d01141abbe9024ac3f58be9b792c4b7565a4eb9461db8221925380e5b812897b29a922ad259d48f49bf",
+            "file": "src/app/components/caricadocumento/caricadocumento.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-caricadocumento",
+            "styleUrls": [
+                "./caricadocumento.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./caricadocumento.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 16,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "<p>This is an Vittoria component that displays a file upload interface with a title, icon, and upload button. The title and icon are centered horizontally and spaced using the flex and gap CSS properties. The upload button is displayed below them, centered horizontally using the flex and justify-center CSS properties. The button has a rounded border and a solid white background with a bold, navy blue text label. When clicked, it triggers a file upload event. Overall, this component has a clean and user-friendly design.</p>\n",
+            "rawdescription": "\n\nThis is an Vittoria component that displays a file upload interface with a title, icon, and upload button. The title and icon are centered horizontally and spaced using the flex and gap CSS properties. The upload button is displayed below them, centered horizontally using the flex and justify-center CSS properties. The button has a rounded border and a solid white background with a bold, navy blue text label. When clicked, it triggers a file upload event. Overall, this component has a clean and user-friendly design.\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n/**\nThis is an Vittoria component that displays a file upload interface with a title, icon, and upload button. The title and icon are centered horizontally and spaced using the flex and gap CSS properties. The upload button is displayed below them, centered horizontally using the flex and justify-center CSS properties. The button has a rounded border and a solid white background with a bold, navy blue text label. When clicked, it triggers a file upload event. Overall, this component has a clean and user-friendly design.\n */\n\n@Component({\n  selector: 'app-caricadocumento',\n  templateUrl: './caricadocumento.component.html',\n  styleUrls: ['./caricadocumento.component.css']\n})\nexport class CaricadocumentoComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "#divisione {\n    width: 256px;\n    height: 142px;\n    background: linear-gradient(90deg, #004395 -3.33%, #00205C 100%);\n}\n\n#buttone {\n    width:180px;\n}",
+                    "styleUrl": "./caricadocumento.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 12
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div id=\"divisione\" class=\"rounded-md\">\n    <div class=\"flex flex-row justify-center items-center gap-5 rounded-md\" >\n            <h3 class=\"font-vitt text-white not-italic font-semibold text-lg leading-6 mt-6 tracking-wider\">Carica documento</h3>\n            <img class=\"w-10 h-10\" src=\"/assets/icons/upload_file.svg\" alt=\"upload icon\">    \n    </div>\n    <div class=\"flex justify-center mt-8\">\n        <button id=\"buttone\" class=\"rounded-3xl border-none bg-white font-vitt text-vittNavyBlue not-italic font-bold text-sm leading-5 text-center tracking-widest\t py-1.5 px-4 h-8 \">Carica documento</button>\n    </div>\n</div>"
+        },
+        {
+            "name": "CaricamentoComponent",
+            "id": "component-CaricamentoComponent-80c07c9d43abebe883b8c00f5f4814242036b17e4c19bc058304dea4644783aa23bf17e95379ff1926f64651d6b9df2a9695827545f9733fa6439499e46387ed",
+            "file": "src/app/components/toast/caricamento/caricamento.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-caricamento",
+            "styleUrls": [
+                "./caricamento.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./caricamento.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "value",
+                    "defaultValue": "1",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 20,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "<p>This is a reusable component that displays a toast message indicating the progress of an ongoing operation.\nIt includes an image icon, a message indicating the number of elements being loaded, and a close button.</p>\n",
+            "rawdescription": "\n\nThis is a reusable component that displays a toast message indicating the progress of an ongoing operation.\nIt includes an image icon, a message indicating the number of elements being loaded, and a close button.\n\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n/**\nThis is a reusable component that displays a toast message indicating the progress of an ongoing operation. \nIt includes an image icon, a message indicating the number of elements being loaded, and a close button.\n\n */\n\n@Component({\n  selector: 'app-caricamento',\n  templateUrl: './caricamento.component.html',\n  styleUrls: ['./caricamento.component.css']\n})\nexport class CaricamentoComponent implements OnInit {\n\n  value = 1;\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".divisione {\n    width:296px;\n    height:40px;\n    border-radius:5px;\n    border: 1px solid #7AA0D7;\n}",
+                    "styleUrl": "./caricamento.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 16
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"flex flex-row not-italic font-normal text-xs text-vittNavyBlue justify-around tracking-wider leading-4 content-center items-center bg-vittPaleGray font-vitt divisione\">\n    <img src=\"/assets/icons/toast/caricamento.svg\" alt=\"carica-toast\">\n    <span>Caricamento di <span class=\"font-bold\">{{value}}</span> elementi in corso.</span>\n    <img src=\"/assets/icons/toast/close.svg\" alt=\"close-toast\">\n</div>"
+        },
+        {
+            "name": "CartelleComponent",
+            "id": "component-CartelleComponent-beebc63ecd0ad15f850a1c850c4ffa4f2fb62a13676549e5fb910326ebbe4bfccb083caf1368f23cf010b006fb1b2cbaa3612fec6396d612d259d4978a203cab",
+            "file": "src/app/components/cartelle/cartelle.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-cartelle",
+            "styleUrls": [
+                "./cartelle.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./cartelle.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "newCartelaItems",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 21,
+                    "type": "string[]",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "cartelaItems",
+                    "defaultValue": "['Cartella 1', 'Assicurazioni neve', 'Cartella 3', 'Cartella 4', 'Cartella impianti', 'Assicurazioni sci', 'Cartella 7', 'Cartella 8']",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
+                },
+                {
+                    "name": "sottoCartela",
+                    "defaultValue": "['Cartella 1', 'Assicurazioni neve', 'Cartella 3', 'Cartella 4']",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 27
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "redirectToPage",
+                    "args": [
+                        {
+                            "name": "item",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 30,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "item",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "<p>This component displays a list of folder items with their names and icons.\nThe user can click on a folder item to navigate to a specific page.\nThe component also contains two arrays, cartelaItems, and sottoCartela, which are used to populate the list of folder items.</p>\n",
+            "rawdescription": "\n\nThis component displays a list of folder items with their names and icons.\nThe user can click on a folder item to navigate to a specific page.\nThe component also contains two arrays, cartelaItems, and sottoCartela, which are used to populate the list of folder items.\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { Router } from '@angular/router';\n\n\n/**\nThis component displays a list of folder items with their names and icons.\nThe user can click on a folder item to navigate to a specific page.\nThe component also contains two arrays, cartelaItems, and sottoCartela, which are used to populate the list of folder items.\n*/\n\n\n\n@Component({\n  selector: 'app-cartelle',\n  templateUrl: './cartelle.component.html',\n  styleUrls: ['./cartelle.component.css']\n})\nexport class CartelleComponent {\n\n\n  @Input() newCartelaItems: string[] = [];\n\n  constructor(private router: Router) {}\n\n\n  cartelaItems = ['Cartella 1', 'Assicurazioni neve', 'Cartella 3', 'Cartella 4', 'Cartella impianti', 'Assicurazioni sci', 'Cartella 7', 'Cartella 8'];\n  sottoCartela = ['Cartella 1', 'Assicurazioni neve', 'Cartella 3', 'Cartella 4'];\n\n  \n  redirectToPage(item: string) {\n    this.router.navigate(['/path/to/page', encodeURIComponent(item)]);\n  }  \n  \n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".maco {\n    width:24.2%;\n    height:75px;\n}\n",
+                    "styleUrl": "./cartelle.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 21,
+                "jsdoctags": [
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "templateData": "<h2 class=\"text-vittNavyBlue h-8 not-italic font-bold text-2xl leading-8 font-vitt \">Cartelle</h2>\n<div class=\"flex flex-wrap gap-3 w-full\">\n  <div *ngFor=\"let item of newCartelaItems\" class=\"flex items-center rounded-lg bg-gray-200 cursor-pointer maco\" (click)=\"redirectToPage(item)\">\n    <img class=\"w-12 h-12 my-3.5 ml-4\" src=\"/assets/icons/icon_folder.svg\" alt=\"icon\" />\n    <span class=\"not-italic font-bold text-base leading-6 font-vitt text-vittNavyBlue py-2 px-4\">{{ item }}</span>\n  </div>\n</div>"
+        },
+        {
+            "name": "CartelleDetailsComponent",
+            "id": "component-CartelleDetailsComponent-114387c6a9121fcc8453c97c52073ab9117baaa530c9f5aa49c7739a9726fbdfab33c774426e3b94559ee7e20a6165a12bed1125c460d8d9c1e2f450a98a018d",
+            "file": "src/app/components/cartelle/cartelle-details/cartelle-details.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-cartelle-details",
+            "styleUrls": [
+                "./cartelle-details.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./cartelle-details.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "sottoCartela",
+                    "defaultValue": "['Sottocartella 1', 'Sottocartella 2', 'Sottocartella 3', 'Sottocartella 4']",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 16,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "redirectToPage",
+                    "args": [
+                        {
+                            "name": "item",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 19,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "item",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\nimport { Router } from '@angular/router';\n\n\n@Component({\n  selector: 'app-cartelle-details',\n  templateUrl: './cartelle-details.component.html',\n  styleUrls: ['./cartelle-details.component.css']\n})\nexport class CartelleDetailsComponent implements OnInit {\n\n  sottoCartela = ['Sottocartella 1', 'Sottocartella 2', 'Sottocartella 3', 'Sottocartella 4'];\n\n  constructor(private router: Router) { }\n\n  ngOnInit(): void {\n  }\n\n  redirectToPage(item: string) {\n    this.router.navigate(['/path/to/page/sottocartella', encodeURIComponent(item)]);\n  }  \n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./cartelle-details.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 12,
+                "jsdoctags": [
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"mt-20 mx-24\">\n    <div class=\"flex justify-between\">\n        <app-cartelle-header></app-cartelle-header>\n        <app-caricadocumento></app-caricadocumento>\n    </div>\n   <app-select></app-select>\n   <app-cartelle [newCartelaItems]=\"sottoCartela\"></app-cartelle>\n   <app-table></app-table>\n</div>"
+        },
+        {
+            "name": "CartelleHeaderComponent",
+            "id": "component-CartelleHeaderComponent-797629af5ebd5237a14258b2878265817a6230ab924e2b37d07f5a31a4578afc834e59fa14ab0fe583fcf60e4f2bb1c04fa67cadb83da654c164ac245087f230",
+            "file": "src/app/components/cartelle/cartelle-header/cartelle-header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-cartelle-header",
+            "styleUrls": [
+                "./cartelle-header.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./cartelle-header.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-cartelle-header',\n  templateUrl: './cartelle-header.component.html',\n  styleUrls: ['./cartelle-header.component.css']\n})\nexport class CartelleHeaderComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./cartelle-header.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"mt-6\">\n    <div class=\"flex items-center space-x-12 font-vitt text-vittNavyBlue not-italic font-bold text-3xl leading-5\">\n        <span>Cartella 1</span>\n    </div>\n    <div class=\"flex items-center space-x-3 mt-6 maco\">\n        <span class=\"text-vittDarkishBlue font-vitt not-italic font-bold text-sm leading-5 underline\">Agenzia Garda 330</span>\n        <img class=\"text-vittNavyBlue\" src=\"/assets/icons/arrow_next.svg\" alt=\"arrow icon\">\n        <span class=\"text-vittDarkishBlue font-vitt not-italic font-bold text-sm leading-5 underline\">Cartella 1</span>\n    </div>       \n</div>"
+        },
+        {
+            "name": "CartelleSottocartelaComponent",
+            "id": "component-CartelleSottocartelaComponent-4d1cbd6c44a2a9f5b01b151accc23b2ce191ee5d450a77eec1d18e9acf9d2a543186228af0fcf4af4c5ed1a6e32718272e13ebe51e703428cb718d583885212d",
+            "file": "src/app/components/cartelle/cartelle-sottocartela/cartelle-sottocartela.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-cartelle-sottocartela",
+            "styleUrls": [
+                "./cartelle-sottocartela.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./cartelle-sottocartela.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-cartelle-sottocartela',\n  templateUrl: './cartelle-sottocartela.component.html',\n  styleUrls: ['./cartelle-sottocartela.component.css']\n})\nexport class CartelleSottocartelaComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./cartelle-sottocartela.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"mt-20 mx-24\">\n    <div class=\"flex justify-between\">\n        <div class=\"mt-6\">\n            <div class=\"flex items-center space-x-12 font-vitt text-vittNavyBlue not-italic font-bold text-3xl leading-5\">\n                <span>Sottocartela 1</span>\n                </div>\n              <div class=\"flex items-center space-x-3 mt-6 maco\">\n                <span class=\"text-vittDarkishBlue font-vitt not-italic font-bold text-sm leading-5 underline\">Agenzia Garda 330</span>\n                <img class=\"text-vittNavyBlue\" src=\"/assets/icons/arrow_next.svg\" alt=\"arrow icon\">\n                <span class=\"text-vittDarkishBlue font-vitt not-italic font-bold text-sm leading-5 underline\">Cartella 1</span>\n                <img class=\"text-vittNavyBlue\" src=\"/assets/icons/arrow_next.svg\" alt=\"arrow icon\">\n                <span class=\"text-vittDarkishBlue font-vitt not-italic font-bold text-sm leading-5 underline\">Sottocartela 1</span>\n            </div>       \n        </div>\n       \n        <div>\n            <app-caricadocumento></app-caricadocumento>\n        </div> \n    </div>\n\n<app-select></app-select>\n<app-table></app-table>\n</div>"
+        },
+        {
+            "name": "CartelleVuotaComponent",
+            "id": "component-CartelleVuotaComponent-e4dd03ab30a6fee5dea725a822b7dd124657e4530a3d78629116f289ca2237732b96037abc61a755eb36a9b822192ee8a34f5596308e3327e0f02daf2f548ccf",
+            "file": "src/app/components/cartelle/cartelle-vuota/cartelle-vuota.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-cartelle-vuota",
+            "styleUrls": [
+                "./cartelle-vuota.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./cartelle-vuota.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-cartelle-vuota',\n  templateUrl: './cartelle-vuota.component.html',\n  styleUrls: ['./cartelle-vuota.component.css']\n})\nexport class CartelleVuotaComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./cartelle-vuota.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"mt-20 mx-24\">\n    <div>\n        <app-cartelle-header></app-cartelle-header>\n        <h2 class=\"text-vittNavyBlue h-8 not-italic font-bold text-2xl leading-8 font-vitt \">Cartelle</h2>\n    </div>\n</div>"
+        },
+        {
+            "name": "ErrorComponent",
+            "id": "component-ErrorComponent-617ec28a51a0f21f19ad5af8914657f5aa4526193fc248bf49d5bc3ac195bb1bae3679f68dbcc27c29d4b3b67798eb8621131dc0e5cb56db7825e7c86aca7418",
+            "file": "src/app/components/toast/error/error.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-error",
+            "styleUrls": [
+                "./error.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./error.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 18,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "<p>This is a reusable component that displays a toast message indicating the progress of an error operation.\nIt includes an image icon, a message indicating the number of elements being loaded.</p>\n",
+            "rawdescription": "\n\nThis is a reusable component that displays a toast message indicating the progress of an error operation.\nIt includes an image icon, a message indicating the number of elements being loaded.\n\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n/**\nThis is a reusable component that displays a toast message indicating the progress of an error operation. \nIt includes an image icon, a message indicating the number of elements being loaded.\n\n */\n\n@Component({\n  selector: 'app-error',\n  templateUrl: './error.component.html',\n  styleUrls: ['./error.component.css']\n})\nexport class ErrorComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".divisione {\n    width: 438px;\n    height: 40px;\n    border-radius:5px;\n    border: 1px solid #EE7474;\n    background-color: #FCE3E3;;\n}",
+                    "styleUrl": "./error.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 14
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"flex flex-row not-italic font-normal text-xs text-vittNavyBlue justify-around tracking-wider leading-4 content-center items-center bg-vittPaleGray font-vitt divisione\">\n    <img src=\"/assets/icons/toast/danger.svg\" alt=\"carica-toast\">\n    <span>Abbiamo riscontrato un errore nel caricamento di <span class=\"font-bold\">1</span> file. Riprova.</span>\n</div>"
+        },
+        {
+            "name": "HeadComponent",
+            "id": "component-HeadComponent-31c46da6a16feefd384d8520772cc6b60aa5b19d73d659e1e3571bbc9eca20c0054076d711de2672f1b809819be5c7f7a63cdfc514302e381986017e1e34b1ad",
+            "file": "src/app/components/head/head.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-head",
+            "styleUrls": [
+                "./head.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./head.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 21,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "<p>It contains HTML code for displaying a header section with a title, a button for requesting a file extraction,\nand a navigation link to go back to the previous page.</p>\n<p>This component provides a simple and clean interface for displaying a header section with a title and action buttons,\nas well as a navigation link to go back to the previous page.</p>\n",
+            "rawdescription": "\n\n\nIt contains HTML code for displaying a header section with a title, a button for requesting a file extraction,\nand a navigation link to go back to the previous page.\n\nThis component provides a simple and clean interface for displaying a header section with a title and action buttons,\nas well as a navigation link to go back to the previous page.\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n/**\n\n It contains HTML code for displaying a header section with a title, a button for requesting a file extraction, \n and a navigation link to go back to the previous page.\n\nThis component provides a simple and clean interface for displaying a header section with a title and action buttons,\nas well as a navigation link to go back to the previous page.\n */\n\n@Component({\n  selector: 'app-head',\n  templateUrl: './head.component.html',\n  styleUrls: ['./head.component.css']\n})\nexport class HeadComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./head.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 17
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"flex items-center space-x-12 font-vitt text-vittNavyBlue not-italic font-bold text-3xl leading-5\">\n    <span>Agenzia Garda - 330</span>\n    <button class=\"bg-vittDarkishBlue w-56 h-8 rounded-full rounded-2xl\tnot-italic font-bold text-sm leading-5 text-white\ttext-center\ttracking-wider border-none \">RICHIEDI ESTRAZIONE FILE</button>\n    </div>\n  <div class=\"flex items-center space-x-3 mt-6 maco\">\n    <img class=\"text-vittNavyBlue\" src=\"/assets/icons/arrow_back.svg\" alt=\"arrow icon\">\n    <span class=\"text-vittDarkishBlue font-vitt not-italic font-bold text-sm leading-5 underline\">Indietro</span>\n</div>"
+        },
+        {
+            "name": "HeaderComponent",
+            "id": "component-HeaderComponent-a557eec14f72c438a8033301f4d6ce023e0a1844a3b06ec2b38794a612acc31735ae78a5ee10071b230c8c20d699eb914554e69d07ade54adb371da8efb464cc",
+            "file": "src/stories/header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-header",
+            "styleUrls": [
+                "./header.css"
+            ],
+            "styles": [],
+            "template": "<header>    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            primary\n            size=\"small\"\n            primary=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 65,
+                    "type": "User | null",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onCreateAccount",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 74,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogin",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 68,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogout",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 71,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\nimport { User } from './User';\n\n@Component({\n  selector: 'storybook-header',\n  template: `<header>\n    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            primary\n            size=\"small\"\n            primary=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>`,\n  styleUrls: ['./header.css'],\n})\nexport default class HeaderComponent {\n  @Input()\n  user: User | null = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".wrapper {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1);\n  padding: 15px 20px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\nsvg {\n  display: inline-block;\n  vertical-align: top;\n}\n\nh1 {\n  font-weight: 900;\n  font-size: 20px;\n  line-height: 1;\n  margin: 6px 0 6px 10px;\n  display: inline-block;\n  vertical-align: top;\n}\n\nbutton + button {\n  margin-left: 10px;\n}\n\n.welcome {\n  color: #333;\n  font-size: 14px;\n  margin-right: 10px;\n}\n",
+                    "styleUrl": "./header.css"
+                }
+            ],
+            "stylesData": ""
+        },
+        {
+            "name": "MainpageComponent",
+            "id": "component-MainpageComponent-e10fd8f7c2de31c0faadab25fa79ee8ee4f30f83c3a90e292badb80655e9538d76be4af9eb79e93b4382337efb83abe28b9bef0f1836d5b59fe355fd273fd116",
+            "file": "src/app/components/mainpage/mainpage.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-mainpage",
+            "styleUrls": [
+                "./mainpage.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./mainpage.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "sottoCartela",
+                    "defaultValue": "['Cartella 1', 'Assicurazioni neve', 'Cartella 3', 'Cartella 4', 'Cartella impianti', 'Assicurazioni sci', 'Cartella 7', 'Cartella 8']",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 14,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n@Component({\n  selector: 'app-mainpage',\n  templateUrl: './mainpage.component.html',\n  styleUrls: ['./mainpage.component.css']\n})\nexport class MainpageComponent implements OnInit {\n\n  sottoCartela = ['Cartella 1', 'Assicurazioni neve', 'Cartella 3', 'Cartella 4', 'Cartella impianti', 'Assicurazioni sci', 'Cartella 7', 'Cartella 8'];\n\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./mainpage.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 9
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"mt-20 mx-24\">\n    <app-head></app-head>\n    <app-select></app-select>\n    <app-cartelle [newCartelaItems]=\"sottoCartela\"></app-cartelle>\n    <app-table></app-table>\n</div>"
+        },
+        {
+            "name": "PageComponent",
+            "id": "component-PageComponent-7126d8c2607c946741c651482413b43feb72b2d63cac9d3ac173fde206a5e635eb4cdbf7ca7ac9327c7d4d05cf7ef619144c34c11609ad677081d0ee4e855064",
+            "file": "src/stories/page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-page",
+            "styleUrls": [
+                "./page.css"
+            ],
+            "styles": [],
+            "template": "<article>    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"doLogout()\"\n      (onLogin)=\"doLogin()\"\n      (onCreateAccount)=\"doCreateAccount()\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 64
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "doCreateAccount",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 74,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "doLogin",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 70,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "doLogout",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 66,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { User } from './User';\n\n@Component({\n  selector: 'storybook-page',\n  template: `<article>\n    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"doLogout()\"\n      (onLogin)=\"doLogin()\"\n      (onCreateAccount)=\"doCreateAccount()\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>`,\n  styleUrls: ['./page.css'],\n})\nexport default class PageComponent {\n  user: User | null = null;\n\n  doLogout() {\n    this.user = null;\n  }\n\n  doLogin() {\n    this.user = { name: 'Jane Doe' };\n  }\n\n  doCreateAccount() {\n    this.user = { name: 'Jane Doe' };\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "section {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  line-height: 24px;\n  padding: 48px 20px;\n  margin: 0 auto;\n  max-width: 600px;\n  color: #333;\n}\n\nsection h2 {\n  font-weight: 900;\n  font-size: 32px;\n  line-height: 1;\n  margin: 0 0 4px;\n  display: inline-block;\n  vertical-align: top;\n}\n\nsection p {\n  margin: 1em 0;\n}\n\nsection a {\n  text-decoration: none;\n  color: #1ea7fd;\n}\n\nsection ul {\n  padding-left: 30px;\n  margin: 1em 0;\n}\n\nsection li {\n  margin-bottom: 8px;\n}\n\nsection .tip {\n  display: inline-block;\n  border-radius: 1em;\n  font-size: 11px;\n  line-height: 12px;\n  font-weight: 700;\n  background: #e7fdd8;\n  color: #66bf3c;\n  padding: 4px 12px;\n  margin-right: 10px;\n  vertical-align: top;\n}\n\nsection .tip-wrapper {\n  font-size: 13px;\n  line-height: 20px;\n  margin-top: 40px;\n  margin-bottom: 40px;\n}\n\nsection .tip-wrapper svg {\n  display: inline-block;\n  height: 12px;\n  width: 12px;\n  margin-right: 4px;\n  vertical-align: top;\n  margin-top: 3px;\n}\n\nsection .tip-wrapper svg path {\n  fill: #1ea7fd;\n}\n",
+                    "styleUrl": "./page.css"
+                }
+            ],
+            "stylesData": ""
+        },
+        {
+            "name": "SelectComponent",
+            "id": "component-SelectComponent-6e9e5b4bb80fd9154f119fed347d1f194c44a88120bb30dc3c223eb92a4faeaf1390656b4f3c74e7bbc82c34d6d06a8866824e06780e3da8cd1088e3847cf84d",
+            "file": "src/app/components/select/select.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-select",
+            "styleUrls": [
+                "./select.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./select.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "options",
+                    "defaultValue": "[\n    {label: 'Ultimi 7 giorni', value: 'option1'},\n    {label: '1 Mese', value: 'option2'},\n    {label: '3 Mese', value: 'option3'},\n    {label: '6 Mese', value: 'option3'},\n    {label: '1 anno', value: 'option3'},\n  ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                },
+                {
+                    "name": "optionsTwo",
+                    "defaultValue": "[\n    {label: 'Nome', value: 'option1'},\n    {label: 'Recenti', value: 'option2'}\n  ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 24
+                },
+                {
+                    "name": "selectedOption",
+                    "defaultValue": "'option1'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "selectedOptionTwo",
+                    "defaultValue": "'option2'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 31,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "<p>This is a Vittoria component file in Angular that includes a dropdown selector for selecting a time period.</p>\n",
+            "rawdescription": "\n\nThis is a Vittoria component file in Angular that includes a dropdown selector for selecting a time period.\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n/**\nThis is a Vittoria component file in Angular that includes a dropdown selector for selecting a time period. \n */\n\n@Component({\n  selector: 'app-select',\n  templateUrl: './select.component.html',\n  styleUrls: ['./select.component.css']\n})\nexport class SelectComponent implements OnInit {\n\n  selectedOption = 'option1';\n  selectedOptionTwo = 'option2';\n  options = [\n    {label: 'Ultimi 7 giorni', value: 'option1'},\n    {label: '1 Mese', value: 'option2'},\n    {label: '3 Mese', value: 'option3'},\n    {label: '6 Mese', value: 'option3'},\n    {label: '1 anno', value: 'option3'},\n  ];\n\n  optionsTwo = [\n    {label: 'Nome', value: 'option1'},\n    {label: 'Recenti', value: 'option2'}\n  ]\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./select.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 27
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "\n\n<div class=\"mt-6 flex flex-row justify-between\">\n    <div class=\"flex flex-col space-y-1\">\n        <span class=\"not-italic font-bold text-sm leading-5 text-vittNavyBlue font-vitt \">Periodo</span>\n        <select class=\"w-40\tbox-border flex flex-row items-center p-2 w-40 h-10 border border-vittSoftBlue rounded font-vitt text-vittNavyBlue\" [(ngModel)]=\"selectedOption\">\n            <option class=\"not-italic font-medium text-sm leading-5 flex items-center \" *ngFor=\"let option of options\" [value]=\"option.value\">{{option.label}}</option>\n        </select>\n    </div>\n    <div>\n        <select class=\"not-italic font-bold text-sm leading-5 text-vittNavyBlue font-vitt border-none\t\" [(ngModel)]=\"selectedOptionTwo\">\n            <option *ngFor=\"let option of optionsTwo\" [value]=\"option.value\">{{option.label}}</option>\n        </select>\n    </div>\n</div>"
+        },
+        {
+            "name": "SuccessoComponent",
+            "id": "component-SuccessoComponent-dd056e65a42fdf5728834d8da4d5e58140686996fe10ae432e5f071ad166a34f30416d2fa9235d025ce921a2cdaf5e28f7eb07f5b173b3c9ac6c7fc35852f567",
+            "file": "src/app/components/toast/successo/successo.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-successo",
+            "styleUrls": [
+                "./successo.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./successo.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 18,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "<p>This is a reusable component that displays a toast message indicating the progress of an success operation.\nIt includes an image icon, a message indicating the number of elements being loaded.</p>\n",
+            "rawdescription": "\n\nThis is a reusable component that displays a toast message indicating the progress of an success operation.\nIt includes an image icon, a message indicating the number of elements being loaded.\n\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n/**\nThis is a reusable component that displays a toast message indicating the progress of an success operation. \nIt includes an image icon, a message indicating the number of elements being loaded.\n\n */\n\n@Component({\n  selector: 'app-successo',\n  templateUrl: './successo.component.html',\n  styleUrls: ['./successo.component.css']\n})\nexport class SuccessoComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".divisione {\n    width: 215px;\n    height: 40px;    \n    border-radius:5px;\n    border: 1px solid #80C7B5;\n    background-color: #E6F4F0;\n}",
+                    "styleUrl": "./successo.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 14
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"flex flex-row not-italic font-normal text-xs text-vittNavyBlue justify-around tracking-wider leading-4 content-center items-center bg-vittPaleGray font-vitt divisione\">\n    <img src=\"/assets/icons/toast/task_alt.svg\" alt=\"task-toast\">\n    <span>1 file caricato con successo.</span>\n</div>"
+        },
+        {
+            "name": "TableComponent",
+            "id": "component-TableComponent-1caadc8e5ffe4235f87538d4d88cfaafa030482054a6c80789690db7d2cc44788dd8d1bcddf8486f7c52f83fde96653c3e44de94ab3a8feb6277c5a56b2bbecc",
+            "file": "src/app/components/table/table.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-table",
+            "styleUrls": [
+                "./table.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./table.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "currentPage",
+                    "defaultValue": "1",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 95
+                },
+                {
+                    "name": "itemsPerPage",
+                    "defaultValue": "4",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 96
+                },
+                {
+                    "name": "Math",
+                    "defaultValue": "Math",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 30
+                },
+                {
+                    "name": "orders",
+                    "defaultValue": "[\n    {\n      documentName: 'Documents 1',\n      dataModifica: '11 / 02  / 2023',\n      dataSize: '0.98 KB',\n      iconUrl: '/assets/icons/pdf.svg'\n    },\n    {\n      documentName: 'Documents 2',\n      dataModifica: '11 / 02 / 2023',\n      dataSize: '0.98 KB',\n      iconUrl: '/assets/icons/pictures.svg'\n    },\n    {\n      documentName: 'Documents 3',\n      dataModifica: '11 / 02 / 2023',\n      dataSize: '0.98 KB',\n      iconUrl: '/assets/icons/word.svg'\n    },\n    {\n      documentName: 'Documents 4',\n      dataModifica: '11 / 02 / 2023',\n      dataSize: '0.98 KB',\n      iconUrl: '/assets/icons/excel.svg'\n    },\n    {\n      documentName: 'Documents 5',\n      dataModifica: '06 / 02 / 2023',\n      dataSize: '0.98 KB',\n      iconUrl: '/assets/icons/pdf.svg'\n    },\n    {\n      documentName: 'Documents 6',\n      dataModifica: '06 / 02 / 2023',\n      dataSize: '0.98 KB',\n      iconUrl: '/assets/icons/pictures.svg'\n    },\n    {\n      documentName: 'Documents 7',\n      dataModifica: '06 / 02 / 2023',\n      dataSize: '0.98 KB',\n      iconUrl: '/assets/icons/word.svg'\n    },\n    {\n      documentName: 'Documents 8',\n      dataModifica: '06 / 02 / 2023',\n      dataSize: '0.98 KB',\n      iconUrl: '/assets/icons/excel.svg'\n    },\n    {\n      documentName: 'Documents 9',\n      dataModifica: '06 / 02 / 2023',\n      dataSize: '0.98 KB',\n      iconUrl: '/assets/icons/pdf.svg'\n    },\n    {\n      documentName: 'Documents 10',\n      dataModifica: '06 / 02 / 2023',\n      dataSize: '0.98 KB',\n      iconUrl: '/assets/icons/excel.svg'\n    }\n  ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 32
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "getTotalPages",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "number",
+                    "typeParameters": [],
+                    "line": 103,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 100,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onNextPage",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 107,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onPrevPage",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 114,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "<p>This component is responsible for displaying a list of files along with their metadata.\nIt provides pagination functionality to navigate between different pages of files.</p>\n<hr>\n<p>Input Properties</p>\n<p>orders: An array of orders containing information about files.\nitemsPerPage: The number of files to be displayed per page.</p>\n<hr>\n<p>Functionality</p>\n<p>The component displays a table of files and their metadata.\nThe component provides pagination functionality to navigate between different pages of files.\nThe component displays the total number of files and the current page number.</p>\n",
+            "rawdescription": "\n\nThis component is responsible for displaying a list of files along with their metadata.\nIt provides pagination functionality to navigate between different pages of files.\n\n---------------------------------------------------------------------\n\nInput Properties\n\norders: An array of orders containing information about files.\nitemsPerPage: The number of files to be displayed per page.\n\n---------------------------------------------------------------------\n\nFunctionality\n\nThe component displays a table of files and their metadata.\nThe component provides pagination functionality to navigate between different pages of files.\nThe component displays the total number of files and the current page number.\n\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n/**\nThis component is responsible for displaying a list of files along with their metadata. \nIt provides pagination functionality to navigate between different pages of files.\n\n---------------------------------------------------------------------\n\nInput Properties\n\norders: An array of orders containing information about files.\nitemsPerPage: The number of files to be displayed per page.\n\n---------------------------------------------------------------------\n\nFunctionality\n\nThe component displays a table of files and their metadata.\nThe component provides pagination functionality to navigate between different pages of files.\nThe component displays the total number of files and the current page number.\n\n */\n\n@Component({\n  selector: 'app-table',\n  templateUrl: './table.component.html',\n  styleUrls: ['./table.component.css']\n})\nexport class TableComponent implements OnInit {\n  Math = Math;\n\n  orders = [\n    {\n      documentName: 'Documents 1',\n      dataModifica: '11 / 02  / 2023',\n      dataSize: '0.98 KB',\n      iconUrl: '/assets/icons/pdf.svg'\n    },\n    {\n      documentName: 'Documents 2',\n      dataModifica: '11 / 02 / 2023',\n      dataSize: '0.98 KB',\n      iconUrl: '/assets/icons/pictures.svg'\n    },\n    {\n      documentName: 'Documents 3',\n      dataModifica: '11 / 02 / 2023',\n      dataSize: '0.98 KB',\n      iconUrl: '/assets/icons/word.svg'\n    },\n    {\n      documentName: 'Documents 4',\n      dataModifica: '11 / 02 / 2023',\n      dataSize: '0.98 KB',\n      iconUrl: '/assets/icons/excel.svg'\n    },\n    {\n      documentName: 'Documents 5',\n      dataModifica: '06 / 02 / 2023',\n      dataSize: '0.98 KB',\n      iconUrl: '/assets/icons/pdf.svg'\n    },\n    {\n      documentName: 'Documents 6',\n      dataModifica: '06 / 02 / 2023',\n      dataSize: '0.98 KB',\n      iconUrl: '/assets/icons/pictures.svg'\n    },\n    {\n      documentName: 'Documents 7',\n      dataModifica: '06 / 02 / 2023',\n      dataSize: '0.98 KB',\n      iconUrl: '/assets/icons/word.svg'\n    },\n    {\n      documentName: 'Documents 8',\n      dataModifica: '06 / 02 / 2023',\n      dataSize: '0.98 KB',\n      iconUrl: '/assets/icons/excel.svg'\n    },\n    {\n      documentName: 'Documents 9',\n      dataModifica: '06 / 02 / 2023',\n      dataSize: '0.98 KB',\n      iconUrl: '/assets/icons/pdf.svg'\n    },\n    {\n      documentName: 'Documents 10',\n      dataModifica: '06 / 02 / 2023',\n      dataSize: '0.98 KB',\n      iconUrl: '/assets/icons/excel.svg'\n    }\n  ];\n\n  currentPage = 1;\n  itemsPerPage = 4;\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n  getTotalPages(): number {\n    return Math.ceil(this.orders.length / this.itemsPerPage);\n  }\n\n  onNextPage(): void {\n    const totalPages = this.getTotalPages();\n    if (this.currentPage < totalPages) {\n      this.currentPage++;\n    }\n  }\n\n  onPrevPage(): void {\n    if (this.currentPage > 1) {\n      this.currentPage--;\n    }\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".tableData {\n    width: 100%;\n}\ntbody tr {\n    border-top: 1px solid #DDE2ED;\n}\ntbody tr:nth-child(odd) {\n    background-color: #f8f9fb;\n  }\n\ntd {\n    padding: 17px 8px;\n}\n\nimg {\n    height:40px;\n    width:40px;\n}\n\n#currentPage {\n    color: #00205C;\n}",
+                    "styleUrl": "./table.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 96
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<h2 class=\"text-vittNavyBlue h-8 not-italic font-bold text-2xl leading-8 font-vitt \">File</h2>\n<div>\n    <table class=\"tableData border-collapse \">\n      <thead class=\"text-left\">\n        <tr class=\"not-italic font-bold  text-xs leading-4 font-vitt uppercase  text-vittNavyBlue\">\n          <th class=\"px-4 py-2\">NOME</th>\n          <th>DATA ULTIMA MODIFICA</th>\n          <th>DIMENSIONE</th>\n        </tr>\n      </thead>\n      <tbody class=\"not-italic font-light text-sm leading-5 text-vittNavyBlue w-60 tracking-wide font-vitt\">\n        <tr *ngFor=\"let order of orders.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage)\" class=\"hover:bg-gray-100\">\n          <td>\n            <img src=\"{{ order.iconUrl }}\" alt=\"{{ order.documentName }}\" class=\"inline-block align-middle w-10\th-10 mr-2\">\n            {{ order.documentName }}\n          </td>\n          <td>{{ order.dataModifica }}</td>\n          <td>{{ order.dataSize }}</td>\n        </tr>\n      </tbody>\n    </table>\n\n    <div class=\"flex justify-between mt-4\">\n        <div class=\"font-vitt h-1 not-italic font-bold text-xs leading-4 text-vittNavyBlue ml-8\">\n            {{ (currentPage - 1) * itemsPerPage + 1 }} - {{ (currentPage - 1) * itemsPerPage + orders.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage).length }} of {{ orders.length }} files\n        </div>\n        <div class=\"flex items-center  mr-12 mb-20\">\n            <span class=\"font-vitt text-v mr-4 not-italic font-bold text-xs leading-4 text-vittSoftBlue\t\">PAGINA <span id=\"currentPage\">{{ currentPage }}</span> DI {{ Math.ceil(orders.length / itemsPerPage) }}</span>\n            <button class=\"  bg-transparent rounded-lg border-none text-white text-vittDarkishBlue\" [disabled]=\"currentPage === 1\" (click)=\"currentPage = currentPage - 1\">\n              <i class=\"fas fa-chevron-left\"></i>\n            </button>\n            <button class=\" bg-transparent rounded-lg border-none text-white text-vittDarkishBlue\" [disabled]=\"currentPage === Math.ceil(orders.length / itemsPerPage)\" (click)=\"currentPage = currentPage + 1\">\n              <i class=\"fas fa-chevron-right\"></i>\n            </button>\n          </div>\n    </div>\n  </div>\n  "
+        }
+    ],
+    "modules": [
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-91004787bc30d323841c98e28d3163c5b8a6592fae0ff621d757028ff9fa4ea268510e11c4664592287940e24d3f453a0b98d08e4861c064aac6ded72df6fee7",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { FormsModule } from '@angular/forms';\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { SelectComponent } from './components/select/select.component';\nimport { CartelleComponent } from './components/cartelle/cartelle.component';\nimport { TableComponent } from './components/table/table.component';\nimport { RouterModule, Routes } from '@angular/router';\nimport { CartelleDetailsComponent } from './components/cartelle/cartelle-details/cartelle-details.component';\nimport { HeadComponent } from './components/head/head.component';\nimport { MainpageComponent } from './components/mainpage/mainpage.component';\nimport { CaricadocumentoComponent } from './components/caricadocumento/caricadocumento.component';\nimport { CartelleSottocartelaComponent } from './components/cartelle/cartelle-sottocartela/cartelle-sottocartela.component';\nimport { CaricamentoComponent } from './components/toast/caricamento/caricamento.component';\nimport { SuccessoComponent } from './components/toast/successo/successo.component';\nimport { ErrorComponent } from './components/toast/error/error.component';\nimport { CartelleVuotaComponent } from './components/cartelle/cartelle-vuota/cartelle-vuota.component';\nimport { CartelleHeaderComponent } from './components/cartelle/cartelle-header/cartelle-header.component';\n\nconst appRoute: Routes = [\n  {path: '', redirectTo: 'Home', pathMatch: 'full'},\n  {path: 'Home', component: MainpageComponent },\n  {path: 'Details', component: TableComponent },\n  {path: 'Sottocartela', component: CartelleSottocartelaComponent },\n  {path: 'Toast', component: CaricamentoComponent },\n  {path: 'Vuota', component: CartelleVuotaComponent },\n\n]\n\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    SelectComponent,\n    CartelleComponent,\n    TableComponent,\n    CartelleDetailsComponent,\n    HeadComponent,\n    MainpageComponent,\n    CaricadocumentoComponent,\n    CartelleSottocartelaComponent,\n    CaricamentoComponent,\n    SuccessoComponent,\n    ErrorComponent,\n    CartelleVuotaComponent,\n    CartelleHeaderComponent\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    FormsModule,\n    RouterModule.forRoot(appRoute)\n  ],\n  providers: [],\n  bootstrap: [AppComponent],\n  exports: [CartelleComponent],\n})\nexport class AppModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        },
+                        {
+                            "name": "CaricadocumentoComponent"
+                        },
+                        {
+                            "name": "CaricamentoComponent"
+                        },
+                        {
+                            "name": "CartelleComponent"
+                        },
+                        {
+                            "name": "CartelleDetailsComponent"
+                        },
+                        {
+                            "name": "CartelleHeaderComponent"
+                        },
+                        {
+                            "name": "CartelleSottocartelaComponent"
+                        },
+                        {
+                            "name": "CartelleVuotaComponent"
+                        },
+                        {
+                            "name": "ErrorComponent"
+                        },
+                        {
+                            "name": "HeadComponent"
+                        },
+                        {
+                            "name": "MainpageComponent"
+                        },
+                        {
+                            "name": "SelectComponent"
+                        },
+                        {
+                            "name": "SuccessoComponent"
+                        },
+                        {
+                            "name": "TableComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AppRoutingModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "CartelleComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppRoutingModule",
+            "id": "module-AppRoutingModule-9393106da473727f512657ceca5b06880a737d3e78db1fb8ef5da8b7e3f2fa267441949695c8cdf394216a5ced413c5c3c9a0bb322ac4cee216fd850b69ac986",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { CartelleComponent } from './components/cartelle/cartelle.component';\nimport { CartelleDetailsComponent } from './components/cartelle/cartelle-details/cartelle-details.component';\nimport { CartelleSottocartelaComponent } from './components/cartelle/cartelle-sottocartela/cartelle-sottocartela.component';\n\n\nconst routes: Routes = [\n  { path: 'path/to/page/:item', component: CartelleDetailsComponent },\n  { path: 'path/to/page/:item/:sottocartela', component: CartelleSottocartelaComponent }\n\n\n];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/caricadocumento/caricadocumento.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/cartelle/cartelle.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/select/select.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/head/head.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/table/table.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/toast/caricamento/caricamento.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/toast/successo/successo.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/toast/error/error.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "Large",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Small",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Button>",
+                "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Header>",
+                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Page>",
+                "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/caricadocumento/caricadocumento.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<CaricadocumentoComponent>",
+                "defaultValue": "(args: CaricadocumentoComponent) => ({\n    component: CaricadocumentoComponent,\n    props: args,\n  })"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/cartelle/cartelle.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<CartelleComponent>",
+                "defaultValue": "(args: CartelleComponent) => ({\n  component: CartelleComponent,\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/select/select.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<SelectComponent>",
+                "defaultValue": "(args: SelectComponent) => ({\n    component: SelectComponent,\n    props: args,\n  })"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/head/head.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<HeadComponent>",
+                "defaultValue": "(args: HeadComponent) => ({\n    component: HeadComponent,\n    props: args,\n  })"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/table/table.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TableComponent>",
+                "defaultValue": "(args: TableComponent) => ({\n    component: TableComponent,\n    props: args,\n  })"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/toast/caricamento/caricamento.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<CaricamentoComponent>",
+                "defaultValue": "(args: CaricamentoComponent) => ({\n    component: CaricamentoComponent,\n    props: args,\n  })"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/toast/successo/successo.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<SuccessoComponent>",
+                "defaultValue": "(args: SuccessoComponent) => ({\n    component: SuccessoComponent,\n    props: args,\n  })"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/toast/error/error.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ErrorComponent>",
+                "defaultValue": "(args: ErrorComponent) => ({\n    component: ErrorComponent,\n    props: args,\n  })"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/app/components/caricadocumento/caricadocumento.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/caricadocumento/caricadocumento.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/caricadocumento/caricadocumento.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<CaricadocumentoComponent>",
+                    "defaultValue": "(args: CaricadocumentoComponent) => ({\n    component: CaricadocumentoComponent,\n    props: args,\n  })"
+                }
+            ],
+            "src/app/components/cartelle/cartelle.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/cartelle/cartelle.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/cartelle/cartelle.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<CartelleComponent>",
+                    "defaultValue": "(args: CartelleComponent) => ({\n  component: CartelleComponent,\n  props: args,\n})"
+                }
+            ],
+            "src/app/components/select/select.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/select/select.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/select/select.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<SelectComponent>",
+                    "defaultValue": "(args: SelectComponent) => ({\n    component: SelectComponent,\n    props: args,\n  })"
+                }
+            ],
+            "src/app/components/head/head.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/head/head.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/head/head.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<HeadComponent>",
+                    "defaultValue": "(args: HeadComponent) => ({\n    component: HeadComponent,\n    props: args,\n  })"
+                }
+            ],
+            "src/app/components/table/table.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/table/table.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/table/table.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<TableComponent>",
+                    "defaultValue": "(args: TableComponent) => ({\n    component: TableComponent,\n    props: args,\n  })"
+                }
+            ],
+            "src/app/components/toast/caricamento/caricamento.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/toast/caricamento/caricamento.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/toast/caricamento/caricamento.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<CaricamentoComponent>",
+                    "defaultValue": "(args: CaricamentoComponent) => ({\n    component: CaricamentoComponent,\n    props: args,\n  })"
+                }
+            ],
+            "src/app/components/toast/successo/successo.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/toast/successo/successo.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/toast/successo/successo.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<SuccessoComponent>",
+                    "defaultValue": "(args: SuccessoComponent) => ({\n    component: SuccessoComponent,\n    props: args,\n  })"
+                }
+            ],
+            "src/app/components/toast/error/error.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/toast/error/error.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/toast/error/error.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ErrorComponent>",
+                    "defaultValue": "(args: ErrorComponent) => ({\n    component: ErrorComponent,\n    props: args,\n  })"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "src/stories/Button.stories.ts": [
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Button>",
+                    "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/Header.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Header>",
+                    "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/Page.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Page>",
+                    "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "className": "AppModule",
+        "children": [
+            {
+                "name": "routes",
+                "filename": "src/app/app-routing.module.ts",
+                "module": "AppRoutingModule",
+                "children": [
+                    {
+                        "path": "path/to/page/:item",
+                        "component": "CartelleDetailsComponent"
+                    },
+                    {
+                        "path": "path/to/page/:item/:sottocartela",
+                        "component": "CartelleSottocartelaComponent"
+                    }
+                ],
+                "kind": "module"
+            }
+        ]
+    },
+    "coverage": {
+        "count": 5,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/caricadocumento/caricadocumento.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CaricadocumentoComponent",
+                "coveragePercent": 33,
+                "coverageCount": "1/3",
+                "status": "medium"
+            },
+            {
+                "filePath": "src/app/components/caricadocumento/caricadocumento.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/caricadocumento/caricadocumento.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/cartelle/cartelle-details/cartelle-details.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CartelleDetailsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/cartelle/cartelle-header/cartelle-header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CartelleHeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/cartelle/cartelle-sottocartela/cartelle-sottocartela.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CartelleSottocartelaComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/cartelle/cartelle-vuota/cartelle-vuota.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CartelleVuotaComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/cartelle/cartelle.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CartelleComponent",
+                "coveragePercent": 16,
+                "coverageCount": "1/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/cartelle/cartelle.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/cartelle/cartelle.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/head/head.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HeadComponent",
+                "coveragePercent": 33,
+                "coverageCount": "1/3",
+                "status": "medium"
+            },
+            {
+                "filePath": "src/app/components/head/head.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/head/head.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/mainpage/mainpage.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MainpageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/select/select.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SelectComponent",
+                "coveragePercent": 14,
+                "coverageCount": "1/7",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/select/select.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/select/select.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/table/table.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TableComponent",
+                "coveragePercent": 10,
+                "coverageCount": "1/10",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/table/table.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/table/table.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/toast/caricamento/caricamento.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CaricamentoComponent",
+                "coveragePercent": 25,
+                "coverageCount": "1/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/toast/caricamento/caricamento.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/toast/caricamento/caricamento.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/toast/error/error.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ErrorComponent",
+                "coveragePercent": 33,
+                "coverageCount": "1/3",
+                "status": "medium"
+            },
+            {
+                "filePath": "src/app/components/toast/error/error.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/toast/error/error.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/toast/successo/successo.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SuccessoComponent",
+                "coveragePercent": 33,
+                "coverageCount": "1/3",
+                "status": "medium"
+            },
+            {
+                "filePath": "src/app/components/toast/successo/successo.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/toast/successo/successo.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Large",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Small",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/User.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "User",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 83,
+                "coverageCount": "5/6",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            }
+        ]
+    }
+}

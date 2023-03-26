@@ -1,5 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 
+/**
+This component is responsible for displaying a list of files along with their metadata. 
+It provides pagination functionality to navigate between different pages of files.
+
+---------------------------------------------------------------------
+
+Input Properties
+
+orders: An array of orders containing information about files.
+itemsPerPage: The number of files to be displayed per page.
+
+---------------------------------------------------------------------
+
+Functionality
+
+The component displays a table of files and their metadata.
+The component provides pagination functionality to navigate between different pages of files.
+The component displays the total number of files and the current page number.
+
+ */
+
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
