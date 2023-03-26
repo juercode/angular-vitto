@@ -1,0 +1,22 @@
+.tableData {
+    width: 100%;
+}
+tbody tr {
+    border-top: 1px solid #DDE2ED;
+}
+tbody tr:nth-child(odd) {
+    background-color: #f8f9fb;
+  }
+
+td {
+    padding: 17px 8px;
+}
+
+img {
+    height:40px;
+    width:40px;
+}
+
+#currentPage {
+    color: #00205C;
+}

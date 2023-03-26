@@ -1,0 +1,38 @@
+<h2 class="text-vittNavyBlue h-8 not-italic font-bold text-2xl leading-8 font-vitt ">File</h2>
+<div>
+    <table class="tableData border-collapse ">
+      <thead class="text-left">
+        <tr class="not-italic font-bold  text-xs leading-4 font-vitt uppercase  text-vittNavyBlue">
+          <th class="px-4 py-2">NOME</th>
+          <th>DATA ULTIMA MODIFICA</th>
+          <th>DIMENSIONE</th>
+        </tr>
+      </thead>
+      <tbody class="not-italic font-light text-sm leading-5 text-vittNavyBlue w-60 tracking-wide font-vitt">
+        <tr *ngFor="let order of orders.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage)" class="hover:bg-gray-100">
+          <td>
+            <img src="{{ order.iconUrl }}" alt="{{ order.documentName }}" class="inline-block align-middle w-10	h-10 mr-2">
+            {{ order.documentName }}
+          </td>
+          <td>{{ order.dataModifica }}</td>
+          <td>{{ order.dataSize }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="flex justify-between mt-4">
+        <div class="font-vitt h-1 not-italic font-bold text-xs leading-4 text-vittNavyBlue ml-8">
+            {{ (currentPage - 1) * itemsPerPage + 1 }} - {{ (currentPage - 1) * itemsPerPage + orders.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage).length }} of {{ orders.length }} files
+        </div>
+        <div class="flex items-center  mr-12 mb-20">
+            <span class="font-vitt text-v mr-4 not-italic font-bold text-xs leading-4 text-vittSoftBlue	">PAGINA <span id="currentPage">{{ currentPage }}</span> DI {{ Math.ceil(orders.length / itemsPerPage) }}</span>
+            <button class="  bg-transparent rounded-lg border-none text-white text-vittDarkishBlue" [disabled]="currentPage === 1" (click)="currentPage = currentPage - 1">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class=" bg-transparent rounded-lg border-none text-white text-vittDarkishBlue" [disabled]="currentPage === Math.ceil(orders.length / itemsPerPage)" (click)="currentPage = currentPage + 1">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+    </div>
+  </div>
+  
