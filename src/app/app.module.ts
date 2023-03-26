@@ -17,6 +17,7 @@ import { SuccessoComponent } from './components/toast/successo/successo.componen
 import { ErrorComponent } from './components/toast/error/error.component';
 import { CartelleVuotaComponent } from './components/cartelle/cartelle-vuota/cartelle-vuota.component';
 import { CartelleHeaderComponent } from './components/cartelle/cartelle-header/cartelle-header.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 const appRoute: Routes = [
   {path: '', redirectTo: 'Home', pathMatch: 'full'},
@@ -44,7 +45,8 @@ const appRoute: Routes = [
     SuccessoComponent,
     ErrorComponent,
     CartelleVuotaComponent,
-    CartelleHeaderComponent
+    CartelleHeaderComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
