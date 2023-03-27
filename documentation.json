@@ -1174,6 +1174,68 @@
             "stylesData": ""
         },
         {
+            "name": "SearchAgencyComponent",
+            "id": "component-SearchAgencyComponent-7c8d686f41c48531ef429780eb519485af5ebac4b206053e837ba82fdcbf60f18f8edb04ade3b5b67c87c8591f35a5451803316aafb80cdba8d5cc58ca8dc184",
+            "file": "src/app/components/search-agency/search-agency.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-search-agency",
+            "styleUrls": [
+                "./search-agency.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./search-agency.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-search-agency',\n  templateUrl: './search-agency.component.html',\n  styleUrls: ['./search-agency.component.css']\n})\nexport class SearchAgencyComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./search-agency.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<p>search-agency works!</p>\n"
+        },
+        {
             "name": "SelectComponent",
             "id": "component-SelectComponent-6e9e5b4bb80fd9154f119fed347d1f194c44a88120bb30dc3c223eb92a4faeaf1390656b4f3c74e7bbc82c34d6d06a8866824e06780e3da8cd1088e3847cf84d",
             "file": "src/app/components/select/select.component.ts",
@@ -1475,13 +1537,13 @@
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-102cd65d32b890a7da76cf826a7ab93ecc676eadc69dbd66cf6d938d25690e3f9bc3aea3a576f10ba98217eb0d985ac5008b5d1746fe388f26c16a4e02e1f284",
+            "id": "module-AppModule-4752f44fa4e38a30a400d0a61122956b733f8f93c8f5881ef428259a7caf43f00d7ed8e1982247dc674779c19b4df4ab45f2ffd9ab41efd26278adf1e1e2b9d9",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { FormsModule } from '@angular/forms';\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { SelectComponent } from './components/select/select.component';\nimport { CartelleComponent } from './components/cartelle/cartelle.component';\nimport { TableComponent } from './components/table/table.component';\nimport { RouterModule, Routes } from '@angular/router';\nimport { CartelleDetailsComponent } from './components/cartelle/cartelle-details/cartelle-details.component';\nimport { HeadComponent } from './components/head/head.component';\nimport { MainpageComponent } from './components/mainpage/mainpage.component';\nimport { CaricadocumentoComponent } from './components/caricadocumento/caricadocumento.component';\nimport { CartelleSottocartelaComponent } from './components/cartelle/cartelle-sottocartela/cartelle-sottocartela.component';\nimport { CaricamentoComponent } from './components/toast/caricamento/caricamento.component';\nimport { SuccessoComponent } from './components/toast/successo/successo.component';\nimport { ErrorComponent } from './components/toast/error/error.component';\nimport { CartelleVuotaComponent } from './components/cartelle/cartelle-vuota/cartelle-vuota.component';\nimport { CartelleHeaderComponent } from './components/cartelle/cartelle-header/cartelle-header.component';\nimport { ModalComponent } from './components/modal/modal.component';\n\nconst appRoute: Routes = [\n  {path: '', redirectTo: 'Home', pathMatch: 'full'},\n  {path: 'Home', component: MainpageComponent },\n  {path: 'Details', component: TableComponent },\n  {path: 'Sottocartela', component: CartelleSottocartelaComponent },\n  {path: 'Toast', component: CaricamentoComponent },\n  {path: 'Vuota', component: CartelleVuotaComponent },\n  {path: 'Modal', component: ModalComponent },\n\n]\n\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    SelectComponent,\n    CartelleComponent,\n    TableComponent,\n    CartelleDetailsComponent,\n    HeadComponent,\n    MainpageComponent,\n    CaricadocumentoComponent,\n    CartelleSottocartelaComponent,\n    CaricamentoComponent,\n    SuccessoComponent,\n    ErrorComponent,\n    CartelleVuotaComponent,\n    CartelleHeaderComponent,\n    ModalComponent\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    FormsModule,\n    RouterModule.forRoot(appRoute)\n  ],\n  providers: [],\n  bootstrap: [AppComponent],\n  exports: [CartelleComponent],\n})\nexport class AppModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { FormsModule } from '@angular/forms';\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { SelectComponent } from './components/select/select.component';\nimport { CartelleComponent } from './components/cartelle/cartelle.component';\nimport { TableComponent } from './components/table/table.component';\nimport { RouterModule, Routes } from '@angular/router';\nimport { CartelleDetailsComponent } from './components/cartelle/cartelle-details/cartelle-details.component';\nimport { HeadComponent } from './components/head/head.component';\nimport { MainpageComponent } from './components/mainpage/mainpage.component';\nimport { CaricadocumentoComponent } from './components/caricadocumento/caricadocumento.component';\nimport { CartelleSottocartelaComponent } from './components/cartelle/cartelle-sottocartela/cartelle-sottocartela.component';\nimport { CaricamentoComponent } from './components/toast/caricamento/caricamento.component';\nimport { SuccessoComponent } from './components/toast/successo/successo.component';\nimport { ErrorComponent } from './components/toast/error/error.component';\nimport { CartelleVuotaComponent } from './components/cartelle/cartelle-vuota/cartelle-vuota.component';\nimport { CartelleHeaderComponent } from './components/cartelle/cartelle-header/cartelle-header.component';\nimport { ModalComponent } from './components/modal/modal.component';\nimport { SearchAgencyComponent } from './components/search-agency/search-agency.component';\n\nconst appRoute: Routes = [\n  {path: '', redirectTo: 'Home', pathMatch: 'full'},\n  {path: 'Home', component: MainpageComponent },\n  {path: 'Details', component: TableComponent },\n  {path: 'Sottocartela', component: CartelleSottocartelaComponent },\n  {path: 'Toast', component: CaricamentoComponent },\n  {path: 'Vuota', component: CartelleVuotaComponent },\n  {path: 'Modal', component: ModalComponent },\n]\n\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    SelectComponent,\n    CartelleComponent,\n    TableComponent,\n    CartelleDetailsComponent,\n    HeadComponent,\n    MainpageComponent,\n    CaricadocumentoComponent,\n    CartelleSottocartelaComponent,\n    CaricamentoComponent,\n    SuccessoComponent,\n    ErrorComponent,\n    CartelleVuotaComponent,\n    CartelleHeaderComponent,\n    ModalComponent,\n    SearchAgencyComponent\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    FormsModule,\n    RouterModule.forRoot(appRoute)\n  ],\n  providers: [],\n  bootstrap: [AppComponent],\n  exports: [CartelleComponent],\n})\nexport class AppModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -1525,6 +1587,9 @@
                         },
                         {
                             "name": "ModalComponent"
+                        },
+                        {
+                            "name": "SearchAgencyComponent"
                         },
                         {
                             "name": "SelectComponent"
@@ -1630,7 +1695,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/select/select.stories.ts",
+                "file": "src/app/components/head/head.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1650,7 +1715,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/head/head.stories.ts",
+                "file": "src/app/components/table/table.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1660,7 +1725,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/table/table.stories.ts",
+                "file": "src/app/components/select/select.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1680,7 +1745,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/toast/error/error.stories.ts",
+                "file": "src/app/components/toast/caricamento/caricamento.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1690,7 +1755,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/toast/caricamento/caricamento.stories.ts",
+                "file": "src/app/components/toast/error/error.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1860,11 +1925,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/select/select.stories.ts",
+                "file": "src/app/components/head/head.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<SelectComponent>",
-                "defaultValue": "(args: SelectComponent) => ({\n    component: SelectComponent,\n    props: args,\n  })"
+                "type": "Story<HeadComponent>",
+                "defaultValue": "(args: HeadComponent) => ({\n    component: HeadComponent,\n    props: args,\n  })"
             },
             {
                 "name": "Template",
@@ -1880,21 +1945,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/head/head.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<HeadComponent>",
-                "defaultValue": "(args: HeadComponent) => ({\n    component: HeadComponent,\n    props: args,\n  })"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/components/table/table.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<TableComponent>",
                 "defaultValue": "(args: TableComponent) => ({\n    component: TableComponent,\n    props: args,\n  })"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/select/select.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<SelectComponent>",
+                "defaultValue": "(args: SelectComponent) => ({\n    component: SelectComponent,\n    props: args,\n  })"
             },
             {
                 "name": "Template",
@@ -1910,21 +1975,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/toast/error/error.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ErrorComponent>",
-                "defaultValue": "(args: ErrorComponent) => ({\n    component: ErrorComponent,\n    props: args,\n  })"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/components/toast/caricamento/caricamento.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<CaricamentoComponent>",
                 "defaultValue": "(args: CaricamentoComponent) => ({\n    component: CaricamentoComponent,\n    props: args,\n  })"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/toast/error/error.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ErrorComponent>",
+                "defaultValue": "(args: ErrorComponent) => ({\n    component: ErrorComponent,\n    props: args,\n  })"
             },
             {
                 "name": "Template",
@@ -1985,12 +2050,12 @@
                     "defaultValue": "(args: CartelleComponent) => ({\n  component: CartelleComponent,\n  props: args,\n})"
                 }
             ],
-            "src/app/components/select/select.stories.ts": [
+            "src/app/components/head/head.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/select/select.stories.ts",
+                    "file": "src/app/components/head/head.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2000,11 +2065,11 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/select/select.stories.ts",
+                    "file": "src/app/components/head/head.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story<SelectComponent>",
-                    "defaultValue": "(args: SelectComponent) => ({\n    component: SelectComponent,\n    props: args,\n  })"
+                    "type": "Story<HeadComponent>",
+                    "defaultValue": "(args: HeadComponent) => ({\n    component: HeadComponent,\n    props: args,\n  })"
                 }
             ],
             "src/app/components/modal/modal.stories.ts": [
@@ -2029,28 +2094,6 @@
                     "defaultValue": "(args: ModalComponent) => ({\n    component: ModalComponent,\n    props: args,\n  })"
                 }
             ],
-            "src/app/components/head/head.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/head/head.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/head/head.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<HeadComponent>",
-                    "defaultValue": "(args: HeadComponent) => ({\n    component: HeadComponent,\n    props: args,\n  })"
-                }
-            ],
             "src/app/components/table/table.stories.ts": [
                 {
                     "name": "Default",
@@ -2071,6 +2114,28 @@
                     "deprecationMessage": "",
                     "type": "Story<TableComponent>",
                     "defaultValue": "(args: TableComponent) => ({\n    component: TableComponent,\n    props: args,\n  })"
+                }
+            ],
+            "src/app/components/select/select.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/select/select.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/select/select.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<SelectComponent>",
+                    "defaultValue": "(args: SelectComponent) => ({\n    component: SelectComponent,\n    props: args,\n  })"
                 }
             ],
             "src/app/components/cartelle/cartelle-vuota/cartella-vuota.stories.ts": [
@@ -2095,28 +2160,6 @@
                     "defaultValue": "(args: CartelleVuotaComponent) => ({\n    component: CartelleVuotaComponent,\n    props: args,\n  })"
                 }
             ],
-            "src/app/components/toast/error/error.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/toast/error/error.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/toast/error/error.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ErrorComponent>",
-                    "defaultValue": "(args: ErrorComponent) => ({\n    component: ErrorComponent,\n    props: args,\n  })"
-                }
-            ],
             "src/app/components/toast/caricamento/caricamento.stories.ts": [
                 {
                     "name": "Default",
@@ -2137,6 +2180,28 @@
                     "deprecationMessage": "",
                     "type": "Story<CaricamentoComponent>",
                     "defaultValue": "(args: CaricamentoComponent) => ({\n    component: CaricamentoComponent,\n    props: args,\n  })"
+                }
+            ],
+            "src/app/components/toast/error/error.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/toast/error/error.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/toast/error/error.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ErrorComponent>",
+                    "defaultValue": "(args: ErrorComponent) => ({\n    component: ErrorComponent,\n    props: args,\n  })"
                 }
             ],
             "src/app/components/toast/successo/successo.stories.ts": [
@@ -2521,6 +2586,15 @@
                 "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/search-agency/search-agency.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SearchAgencyComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {

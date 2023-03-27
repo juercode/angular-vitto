@@ -18,6 +18,7 @@ import { ErrorComponent } from './components/toast/error/error.component';
 import { CartelleVuotaComponent } from './components/cartelle/cartelle-vuota/cartelle-vuota.component';
 import { CartelleHeaderComponent } from './components/cartelle/cartelle-header/cartelle-header.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { SearchAgencyComponent } from './components/search-agency/search-agency.component';
 
 const appRoute: Routes = [
   {path: '', redirectTo: 'Home', pathMatch: 'full'},
@@ -27,7 +28,7 @@ const appRoute: Routes = [
   {path: 'Toast', component: CaricamentoComponent },
   {path: 'Vuota', component: CartelleVuotaComponent },
   {path: 'Modal', component: ModalComponent },
-
+  {path: 'SearchAgency', component: SearchAgencyComponent },
 ]
 
 
@@ -47,7 +48,8 @@ const appRoute: Routes = [
     ErrorComponent,
     CartelleVuotaComponent,
     CartelleHeaderComponent,
-    ModalComponent
+    ModalComponent,
+    SearchAgencyComponent
   ],
   imports: [
     BrowserModule,
