@@ -26,6 +26,7 @@ const appRoute: Routes = [
   {path: 'Sottocartela', component: CartelleSottocartelaComponent },
   {path: 'Toast', component: CaricamentoComponent },
   {path: 'Vuota', component: CartelleVuotaComponent },
+  {path: 'Modal', component: ModalComponent },
 
 ]
 
