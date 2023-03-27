@@ -6,6 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./search-agency.component.css']
 })
 export class SearchAgencyComponent implements OnInit {
+  filteredCartelaItems: any[] = [];
+  searchText: string = '';
   Math = Math;
   @Input() newCartelaItems: string[] = [];
 
@@ -17,37 +19,39 @@ export class SearchAgencyComponent implements OnInit {
     { name: 'Garda 3305', type: 'Agenzia' },
     { name: 'Garda 3306', type: 'Agenzia' },
     { name: 'Garda 3307', type: 'Agenzia' },
-    { name: 'Garda 3308', type: 'Agenzia' },
-    { name: 'Garda 3309', type: 'Agenzia' },
-    { name: 'Garda 3310', type: 'Agenzia' },
-    { name: 'Garda 3311', type: 'Agenzia' },
-    { name: 'Garda 3312', type: 'Agenzia' },
-    { name: 'Garda 3313', type: 'Agenzia' },
-    { name: 'Garda 3314', type: 'Agenzia' },
-    { name: 'Garda 3315', type: 'Agenzia' },
-    { name: 'Garda 3316', type: 'Agenzia' },
+    { name: 'Garda 3301', type: 'Agenzia' },
+    { name: 'Garda 3302', type: 'Agenzia' },
+    { name: 'Garda 3303', type: 'Agenzia' },
+    { name: 'Garda 3304', type: 'Agenzia' },
+    { name: 'Garda 3305', type: 'Agenzia' },
+    { name: 'Garda 3306', type: 'Agenzia' },
     { name: 'Garda 3307', type: 'Agenzia' },
-    { name: 'Garda 3308', type: 'Agenzia' },
-    { name: 'Garda 3309', type: 'Agenzia' },
-    { name: 'Garda 3310', type: 'Agenzia' },
-    { name: 'Garda 3311', type: 'Agenzia' },
-    { name: 'Garda 3312', type: 'Agenzia' },
-    { name: 'Garda 3313', type: 'Agenzia' },
-    { name: 'Garda 3314', type: 'Agenzia' },
-    { name: 'Garda 3315', type: 'Agenzia' },
+    { name: 'Garda 3301', type: 'Agenzia' },
+    { name: 'Garda 3302', type: 'Agenzia' },
+    { name: 'Garda 3303', type: 'Agenzia' },
+    { name: 'Garda 3304', type: 'Agenzia' },
+    { name: 'Garda 3305', type: 'Agenzia' },
+    { name: 'Garda 3306', type: 'Agenzia' },
     { name: 'Garda 3307', type: 'Agenzia' },
-    { name: 'Garda 3308', type: 'Agenzia' },
-    { name: 'Garda 3309', type: 'Agenzia' },
-    { name: 'Garda 3310', type: 'Agenzia' },
-    { name: 'Garda 3311', type: 'Agenzia' },
-    { name: 'Garda 3312', type: 'Agenzia' },
-    { name: 'Garda 3313', type: 'Agenzia' },
-    { name: 'Garda 3314', type: 'Agenzia' },
-    { name: 'Garda 3315', type: 'Agenzia' },
+    { name: 'Garda 3301', type: 'Agenzia' },
+    { name: 'Garda 3302', type: 'Agenzia' },
+    { name: 'Garda 3303', type: 'Agenzia' },
+    { name: 'Garda 3304', type: 'Agenzia' },
+    { name: 'Garda 3305', type: 'Agenzia' },
+    { name: 'Garda 3306', type: 'Agenzia' },
+    { name: 'Garda 3307', type: 'Agenzia' },
+    { name: 'Garda 3301', type: 'Agenzia' },
+    { name: 'Garda 3302', type: 'Agenzia' },
+    { name: 'Garda 3303', type: 'Agenzia' },
+    { name: 'Garda 3304', type: 'Agenzia' },
+    { name: 'Garda 3305', type: 'Agenzia' },
+    { name: 'Garda 3306', type: 'Agenzia' },
+    { name: 'Garda 3307', type: 'Agenzia' },
   ];
 
   currentPage = 1;
   itemsPerPage = 24;
+  filterText = '';
 
   constructor() { }
 
@@ -71,4 +75,14 @@ export class SearchAgencyComponent implements OnInit {
     }
   }
 
+  filteredItems(): any[] {
+    const startIndex = (this.currentPage - 1) * this.itemsPerPage;
+    const endIndex = startIndex + this.itemsPerPage;
+    return this.cartelaItems
+      .filter(item => {
+        const searchText = this.searchText.toLowerCase();
+        return item.name.toLowerCase().includes(searchText) || item.type.toLowerCase().includes(searchText);
+      })
+      .slice(startIndex, endIndex);
+  }
 }
