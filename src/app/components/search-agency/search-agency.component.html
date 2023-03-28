@@ -33,7 +33,24 @@
       </button>
     </div>
   </div>
-  <div class="font-vitt text-v mr-4 not-italic font-bold text-xs leading-4 text-vittDarkishBlue mt-4 ml-4" *ngIf="searchText">
-    {{ filteredCartelaItems.length }} agenzie
-  </div>  
+  <div class="flex justify-between" *ngIf="searchText">
+    <div class="font-vitt text-v mr-4 not-italic font-bold text-xs leading-4 text-vittDarkishBlue mt-4 ml-4">
+      {{ filteredCartelaItems.length }} agenzie
+    </div> 
+
+    <div class="flex items-center  mr-12 mb-20">
+      <span class="font-vitt text-v mr-4 not-italic font-bold text-xs leading-4 text-vittSoftBlue	">PAGINA <span
+          id="currentPage">{{ currentPage }}</span> DI {{ getTotalPagesAfterFiltering() }}</span>
+      <button class=" bg-transparent rounded-lg border-none text-white text-vittDarkishBlue" [disabled]="currentPage === 1"
+        (click)="onPrevPage()">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class=" bg-transparent rounded-lg border-none text-white text-vittDarkishBlue mr-12"
+        [disabled]="currentPage === getTotalPagesAfterFiltering()" (click)="onNextPage()">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+     
+  </div>
+
 </div>

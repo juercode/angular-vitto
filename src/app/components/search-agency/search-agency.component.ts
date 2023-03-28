@@ -62,6 +62,10 @@ export class SearchAgencyComponent implements OnInit {
     return Math.ceil(this.cartelaItems.length / this.itemsPerPage);
   }
 
+  getTotalPagesAfterFiltering(): number {
+    return Math.ceil(this.filteredCartelaItems.length / this.itemsPerPage);
+  }
+
   onNextPage(): void {
     const totalPages = this.getTotalPages();
     if (this.currentPage < totalPages) {
