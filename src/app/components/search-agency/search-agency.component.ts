@@ -78,11 +78,12 @@ export class SearchAgencyComponent implements OnInit {
   filteredItems(): any[] {
     const startIndex = (this.currentPage - 1) * this.itemsPerPage;
     const endIndex = startIndex + this.itemsPerPage;
-    return this.cartelaItems
+    const filteredItems = this.cartelaItems
       .filter(item => {
         const searchText = this.searchText.toLowerCase();
         return item.name.toLowerCase().includes(searchText) || item.type.toLowerCase().includes(searchText);
-      })
-      .slice(startIndex, endIndex);
+      });
+    this.filteredCartelaItems = filteredItems.slice(startIndex, endIndex);
+    return this.filteredCartelaItems;
   }
 }
