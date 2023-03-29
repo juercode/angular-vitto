@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 /**
 This is a reusable component that displays a toast message indicating the progress of an ongoing operation. 
@@ -13,7 +13,7 @@ It includes an image icon, a message indicating the number of elements being loa
 })
 export class CaricamentoComponent implements OnInit {
 
-  value = 1;
+  @Input() number: number = 0;
 
   constructor() { }
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 /**
 This is a reusable component that displays a toast message indicating the progress of an success operation. 
@@ -12,9 +12,9 @@ It includes an image icon, a message indicating the number of elements being loa
   styleUrls: ['./successo.component.css']
 })
 export class SuccessoComponent implements OnInit {
+  @Input() number: number = 0;
 
   constructor() { }
-
   ngOnInit(): void {
   }
 

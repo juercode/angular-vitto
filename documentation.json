@@ -1175,7 +1175,7 @@
         },
         {
             "name": "SearchAgencyComponent",
-            "id": "component-SearchAgencyComponent-fc4d43fbc70243911a87ede5dd22a5d84a7957ed8efb5ea910c8bf6a7dd22d08a7dc74c01dfa7ce8cb0976293851a5384d41af1a42000144e2a05a1f6daf5959",
+            "id": "component-SearchAgencyComponent-8fae16b58008ca3c84520e133ea894bca2f5a402f5f376c0e79a316e23aead055971686249e581c066ae45d4256b355047a3366ce38b2a7261d4e40f3ac993c9",
             "file": "src/app/components/search-agency/search-agency.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1197,7 +1197,7 @@
                     "defaultValue": "[]",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 12,
+                    "line": 14,
                     "type": "string[]",
                     "decorators": []
                 }
@@ -1212,7 +1212,7 @@
                     "type": "[]",
                     "optional": false,
                     "description": "",
-                    "line": 14
+                    "line": 16
                 },
                 {
                     "name": "currentPage",
@@ -1222,7 +1222,7 @@
                     "type": "number",
                     "optional": false,
                     "description": "",
-                    "line": 52
+                    "line": 54
                 },
                 {
                     "name": "filteredCartelaItems",
@@ -1232,7 +1232,7 @@
                     "type": "any[]",
                     "optional": false,
                     "description": "",
-                    "line": 9
+                    "line": 11
                 },
                 {
                     "name": "filterText",
@@ -1242,7 +1242,7 @@
                     "type": "string",
                     "optional": false,
                     "description": "",
-                    "line": 54
+                    "line": 56
                 },
                 {
                     "name": "itemsPerPage",
@@ -1252,7 +1252,7 @@
                     "type": "number",
                     "optional": false,
                     "description": "",
-                    "line": 53
+                    "line": 55
                 },
                 {
                     "name": "Math",
@@ -1262,7 +1262,7 @@
                     "type": "",
                     "optional": false,
                     "description": "",
-                    "line": 11
+                    "line": 13
                 },
                 {
                     "name": "searchText",
@@ -1270,6 +1270,16 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "totalPages",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
                     "optional": false,
                     "description": "",
                     "line": 10
@@ -1280,29 +1290,9 @@
                     "name": "filteredItems",
                     "args": [],
                     "optional": false,
-                    "returnType": "any[]",
+                    "returnType": "literal type",
                     "typeParameters": [],
-                    "line": 82,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                },
-                {
-                    "name": "getTotalPages",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "number",
-                    "typeParameters": [],
-                    "line": 61,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                },
-                {
-                    "name": "getTotalPagesAfterFiltering",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "number",
-                    "typeParameters": [],
-                    "line": 65,
+                    "line": 79,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -1312,7 +1302,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 58,
+                    "line": 60,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -1322,7 +1312,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 69,
+                    "line": 67,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -1332,9 +1322,37 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 76,
+                    "line": 73,
                     "deprecated": false,
                     "deprecationMessage": ""
+                },
+                {
+                    "name": "setTotalPages",
+                    "args": [
+                        {
+                            "name": "numberToSet",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 63,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "numberToSet",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
                 }
             ],
             "deprecated": false,
@@ -1344,7 +1362,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-search-agency',\n  templateUrl: './search-agency.component.html',\n  styleUrls: ['./search-agency.component.css']\n})\nexport class SearchAgencyComponent implements OnInit {\n  filteredCartelaItems: any[] = [];\n  searchText: string = '';\n  Math = Math;\n  @Input() newCartelaItems: string[] = [];\n\n  cartelaItems = [\n    { name: 'Garda 3301', type: 'Agenzia' },\n    { name: 'Garda 3302', type: 'Agenzia' },\n    { name: 'Garda 3303', type: 'Agenzia' },\n    { name: 'Garda 3304', type: 'Agenzia' },\n    { name: 'Garda 3305', type: 'Agenzia' },\n    { name: 'Garda 3306', type: 'Agenzia' },\n    { name: 'Garda 3307', type: 'Agenzia' },\n    { name: 'Garda 3301', type: 'Agenzia' },\n    { name: 'Garda 3302', type: 'Agenzia' },\n    { name: 'Garda 3303', type: 'Agenzia' },\n    { name: 'Garda 3304', type: 'Agenzia' },\n    { name: 'Garda 3305', type: 'Agenzia' },\n    { name: 'Garda 3306', type: 'Agenzia' },\n    { name: 'Garda 3307', type: 'Agenzia' },\n    { name: 'Garda 3301', type: 'Agenzia' },\n    { name: 'Garda 3302', type: 'Agenzia' },\n    { name: 'Garda 3303', type: 'Agenzia' },\n    { name: 'Garda 3304', type: 'Agenzia' },\n    { name: 'Garda 3305', type: 'Agenzia' },\n    { name: 'Garda 3306', type: 'Agenzia' },\n    { name: 'Garda 3307', type: 'Agenzia' },\n    { name: 'Garda 3301', type: 'Agenzia' },\n    { name: 'Garda 3302', type: 'Agenzia' },\n    { name: 'Garda 3303', type: 'Agenzia' },\n    { name: 'Garda 3304', type: 'Agenzia' },\n    { name: 'Garda 3305', type: 'Agenzia' },\n    { name: 'Garda 3306', type: 'Agenzia' },\n    { name: 'Garda 3307', type: 'Agenzia' },\n    { name: 'Garda 3301', type: 'Agenzia' },\n    { name: 'Garda 3302', type: 'Agenzia' },\n    { name: 'Garda 3303', type: 'Agenzia' },\n    { name: 'Garda 3304', type: 'Agenzia' },\n    { name: 'Garda 3305', type: 'Agenzia' },\n    { name: 'Garda 3306', type: 'Agenzia' },\n    { name: 'Garda 3307', type: 'Agenzia' },\n  ];\n\n  currentPage = 1;\n  itemsPerPage = 24;\n  filterText = '';\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n  getTotalPages(): number {\n    return Math.ceil(this.cartelaItems.length / this.itemsPerPage);\n  }\n\n  getTotalPagesAfterFiltering(): number {\n    return Math.ceil(this.filteredCartelaItems.length / this.itemsPerPage);\n  }\n\n  onNextPage(): void {\n    const totalPages = this.getTotalPages();\n    if (this.currentPage < totalPages) {\n      this.currentPage++;\n    }\n  }\n\n  onPrevPage(): void {\n    if (this.currentPage > 1) {\n      this.currentPage--;\n    }\n  }\n\n  filteredItems(): any[] {\n    const startIndex = (this.currentPage - 1) * this.itemsPerPage;\n    const endIndex = startIndex + this.itemsPerPage;\n    const filteredItems = this.cartelaItems\n      .filter(item => {\n        const searchText = this.searchText.toLowerCase();\n        return item.name.toLowerCase().includes(searchText) || item.type.toLowerCase().includes(searchText);\n      });\n    console.log(filteredItems);\n    this.filteredCartelaItems = filteredItems.slice(startIndex, endIndex);\n    console.log(startIndex, endIndex)\n    return this.filteredCartelaItems;\n  }\n}\n",
+            "sourceCode": "import { Component, OnInit, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-search-agency',\n  templateUrl: './search-agency.component.html',\n  styleUrls: ['./search-agency.component.css']\n})\nexport class SearchAgencyComponent implements OnInit {\n\n  totalPages: number = 0;\n  filteredCartelaItems: any[] = [];\n  searchText: string = '';\n  Math = Math;\n  @Input() newCartelaItems: string[] = [];\n\n  cartelaItems = [\n    { name: 'Garda 3301', type: 'Agenzia' },\n    { name: 'Garda 3302', type: 'Agenzia' },\n    { name: 'Garda 3303', type: 'Agenzia' },\n    { name: 'Garda 3304', type: 'Agenzia' },\n    { name: 'Garda 3305', type: 'Agenzia' },\n    { name: 'Garda 3306', type: 'Agenzia' },\n    { name: 'Garda 3307', type: 'Agenzia' },\n    { name: 'Garda 3301', type: 'Agenzia' },\n    { name: 'Garda 3302', type: 'Agenzia' },\n    { name: 'Garda 3303', type: 'Agenzia' },\n    { name: 'Garda 3304', type: 'Agenzia' },\n    { name: 'Garda 3305', type: 'Agenzia' },\n    { name: 'Garda 3306', type: 'Agenzia' },\n    { name: 'Garda 3307', type: 'Agenzia' },\n    { name: 'Garda 3301', type: 'Agenzia' },\n    { name: 'Garda 3302', type: 'Agenzia' },\n    { name: 'Garda 3303', type: 'Agenzia' },\n    { name: 'Garda 3304', type: 'Agenzia' },\n    { name: 'Garda 3305', type: 'Agenzia' },\n    { name: 'Garda 3306', type: 'Agenzia' },\n    { name: 'Garda 3307', type: 'Agenzia' },\n    { name: 'Garda 3301', type: 'Agenzia' },\n    { name: 'Garda 3302', type: 'Agenzia' },\n    { name: 'Garda 3303', type: 'Agenzia' },\n    { name: 'Garda 3304', type: 'Agenzia' },\n    { name: 'Garda 3305', type: 'Agenzia' },\n    { name: 'Garda 3306', type: 'Agenzia' },\n    { name: 'Garda 3307', type: 'Agenzia' },\n    { name: 'Garda 3301', type: 'Agenzia' },\n    { name: 'Garda 3302', type: 'Agenzia' },\n    { name: 'Garda 3303', type: 'Agenzia' },\n    { name: 'Garda 3304', type: 'Agenzia' },\n    { name: 'Garda 3305', type: 'Agenzia' },\n    { name: 'Garda 3306', type: 'Agenzia' },\n    { name: 'Garda 3307', type: 'Agenzia' },\n  ];\n\n  currentPage = 1;\n  itemsPerPage = 24;\n  filterText = '';\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n  setTotalPages(numberToSet: number): void {\n    this.totalPages = Math.ceil(numberToSet / this.itemsPerPage);\n  }\n\n  onNextPage(): void {\n    if (this.currentPage < this.totalPages) {\n      this.currentPage++;\n    }\n  }\n\n  onPrevPage(): void {\n    if (this.currentPage > 1) {\n      this.currentPage--;\n    }\n  }\n\n  filteredItems(): { total: number, currentPageResults: any[] } {\n    const startIndex = (this.currentPage - 1) * this.itemsPerPage;\n    const endIndex = startIndex + this.itemsPerPage;\n    const filteredItems = this.cartelaItems\n      .filter(item => {\n        const searchText = this.searchText.toLowerCase();\n        return item.name.toLowerCase().includes(searchText) || item.type.toLowerCase().includes(searchText);\n      });\n\n    this.setTotalPages(filteredItems.length);\n\n    return {\n      total: filteredItems.length,\n      currentPageResults: filteredItems.slice(startIndex, endIndex)\n    };\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -1359,12 +1377,12 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 54
+                "line": 56
             },
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"mt-20 mx-24\">\n  <h2 class=\"text-vittNavyBlue not-italic font-bold text-3xl font-vitt\">Seleziona l’agenzia </h2>\n  <h2 class=\"text-vittNavyBlue not-italic font-bold text-2xl leading-8 font-vitt\">Agenzie</h2>\n  <h2 class=\"text-vittNavyBlue not-italic font-bold text-sm leading-5 font-vitt\">Seleziona l’agenzia</h2>\n  <div class=\"flex flex-row justify-between rounded borderize mb-6\">\n    <input type=\"text\" [(ngModel)]=\"searchText\" placeholder=\"Cerca agenzia per nome, codice\" class=\"px-2 py-3\tw-full tracking-wider placeholder-vittNavyBlue border-none\" />\n      <img class=\"mr-2\" src=\"/assets/icons/search.svg\" alt=\"search icon\">\n  </div>\n  <div class=\"flex flex-wrap gap-3 w-full\">\n    <div *ngFor=\"let item of filteredItems()\" class=\"flex items-center rounded-lg bg-white cursor-pointer maco\">\n      <img class=\"w-12 h-12 my-3.5 ml-4\" src=\"/assets/icons/cartelle_icon.svg\" alt=\"icon\" />\n      <div class=\"flex flex-col gap-1 ml-2\">\n        <span class=\"not-italic font-bold text-xs text-vittNavyBlue mt-1\">{{ item.type }}</span>\n        <span class=\"not-italic font-bold text-base font-vitt text-vittNavyBlue tracking-wide\">{{ item.name }}</span>\n      </div>\n    </div>\n  </div>\n  <div class=\"flex justify-between mt-4\" *ngIf=\"!searchText\">\n    <div class=\"font-vitt h-1 not-italic font-bold text-xs leading-4 text-vittNavyBlue ml-8\">\n      {{ (currentPage - 1) * itemsPerPage + 1 }} - {{\n      (currentPage - 1) * itemsPerPage + filteredCartelaItems.length }} of {{ cartelaItems.length }} agencies\n    </div>\n    <div class=\"flex items-center  mr-12 mb-20\">\n      <span class=\"font-vitt text-v mr-4 not-italic font-bold text-xs leading-4 text-vittSoftBlue\t\">PAGINA <span\n          id=\"currentPage\">{{ currentPage }}</span> DI {{ getTotalPages() }}</span>\n      <button class=\" bg-transparent rounded-lg border-none text-white text-vittDarkishBlue\" [disabled]=\"currentPage === 1\"\n        (click)=\"onPrevPage()\">\n        <i class=\"fas fa-chevron-left\"></i>\n      </button>\n      <button class=\" bg-transparent rounded-lg border-none text-white text-vittDarkishBlue mr-12\"\n        [disabled]=\"currentPage === getTotalPages()\" (click)=\"onNextPage()\">\n        <i class=\"fas fa-chevron-right\"></i>\n      </button>\n    </div>\n  </div>\n  <div class=\"flex justify-between\" *ngIf=\"searchText\">\n    <div class=\"font-vitt text-v mr-4 not-italic font-bold text-xs leading-4 text-vittDarkishBlue mt-4 ml-4\">\n      {{ filteredCartelaItems.length }} agenzie\n    </div> \n\n    <div class=\"flex items-center  mr-12 mb-20\">\n      <span class=\"font-vitt text-v mr-4 not-italic font-bold text-xs leading-4 text-vittSoftBlue\t\">PAGINA <span\n          id=\"currentPage\">{{ currentPage }}</span> DI {{ getTotalPagesAfterFiltering() }}</span>\n      <button class=\" bg-transparent rounded-lg border-none text-white text-vittDarkishBlue\" [disabled]=\"currentPage === 1\"\n        (click)=\"onPrevPage()\">\n        <i class=\"fas fa-chevron-left\"></i>\n      </button>\n      <button class=\" bg-transparent rounded-lg border-none text-white text-vittDarkishBlue mr-12\"\n        [disabled]=\"currentPage === getTotalPagesAfterFiltering()\" (click)=\"onNextPage()\">\n        <i class=\"fas fa-chevron-right\"></i>\n      </button>\n    </div>\n     \n  </div>\n\n</div>\n"
+            "templateData": "<div class=\"mt-20 mx-24\">\n  <h2 class=\"text-vittNavyBlue not-italic font-bold text-3xl font-vitt\">Seleziona l’agenzia </h2>\n  <h2 class=\"text-vittNavyBlue not-italic font-bold text-2xl leading-8 font-vitt\">Agenzie</h2>\n  <h2 class=\"text-vittNavyBlue not-italic font-bold text-sm leading-5 font-vitt\">Seleziona l’agenzia</h2>\n  <div class=\"flex flex-row justify-between rounded borderize mb-6\">\n    <input type=\"text\" [(ngModel)]=\"searchText\" placeholder=\"Cerca agenzia per nome, codice\" class=\"px-2 py-3\tw-full tracking-wider placeholder-vittNavyBlue border-none\" />\n      <img class=\"mr-2\" src=\"/assets/icons/search.svg\" alt=\"search icon\">\n  </div>\n  <div class=\"flex flex-wrap gap-3 w-full\">\n    <div *ngFor=\"let item of filteredItems().currentPageResults\" class=\"flex items-center rounded-lg bg-white cursor-pointer maco\">\n      <img class=\"w-12 h-12 my-3.5 ml-4\" src=\"/assets/icons/cartelle_icon.svg\" alt=\"icon\" />\n      <div class=\"flex flex-col gap-1 ml-2\">\n        <span class=\"not-italic font-bold text-xs text-vittNavyBlue mt-1\">{{ item.type }}</span>\n        <span class=\"not-italic font-bold text-base font-vitt text-vittNavyBlue tracking-wide\">{{ item.name }}</span>\n      </div>\n    </div>\n  </div>\n  <div class=\"flex justify-between mt-4\" *ngIf=\"!searchText\">\n    <div class=\"font-vitt h-1 not-italic font-bold text-xs leading-4 text-vittNavyBlue ml-8\">\n{{ cartelaItems.length }} agencies\n    </div>\n    <div class=\"flex items-center  mr-12 mb-20\">\n      <span class=\"font-vitt text-v mr-4 not-italic font-bold text-xs leading-4 text-vittSoftBlue\t\">PAGINA <span>{{ currentPage }}</span> DI {{ totalPages }}</span>\n      <button class=\" bg-transparent rounded-lg border-none text-white text-vittDarkishBlue\" [disabled]=\"currentPage === 1\"\n        (click)=\"onPrevPage()\">\n        <i class=\"fas fa-chevron-left\"></i>\n      </button>\n      <button class=\" bg-transparent rounded-lg border-none text-white text-vittDarkishBlue mr-12\"\n        [disabled]=\"currentPage === totalPages\" (click)=\"onNextPage()\">\n        <i class=\"fas fa-chevron-right\"></i>\n      </button>\n    </div>\n  </div>\n  <div class=\"flex justify-between\" *ngIf=\"searchText\">\n    <div class=\"font-vitt text-v mr-4 not-italic font-bold text-xs leading-4 text-vittDarkishBlue mt-4 ml-4\">\n      {{ filteredItems().currentPageResults.length }} di {{ filteredItems().total }} agenzie\n    </div>\n\n    <div class=\"flex items-center  mr-12 mb-20\">\n      <span class=\"font-vitt text-v mr-4 not-italic font-bold text-xs leading-4 text-vittSoftBlue\t\">PAGINA <span\n          id=\"currentPage\">{{ currentPage }}</span> DI {{ totalPages }}</span>\n      <button class=\" bg-transparent rounded-lg border-none text-white text-vittDarkishBlue\" [disabled]=\"currentPage === 1\"\n        (click)=\"onPrevPage()\">\n        <i class=\"fas fa-chevron-left\"></i>\n      </button>\n      <button class=\" bg-transparent rounded-lg border-none text-white text-vittDarkishBlue mr-12\"\n        [disabled]=\"currentPage === totalPages\" (click)=\"onNextPage()\">\n        <i class=\"fas fa-chevron-right\"></i>\n      </button>\n    </div>\n\n  </div>\n\n</div>\n"
         },
         {
             "name": "SelectComponent",
@@ -1816,16 +1834,6 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/cartelle/cartelle.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/components/head/head.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1836,7 +1844,27 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/components/cartelle/cartelle.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/components/modal/modal.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/search-agency/search-agency.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2046,16 +2074,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/cartelle/cartelle.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<CartelleComponent>",
-                "defaultValue": "(args: CartelleComponent) => ({\n  component: CartelleComponent,\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/components/head/head.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2066,11 +2084,31 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/components/cartelle/cartelle.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<CartelleComponent>",
+                "defaultValue": "(args: CartelleComponent) => ({\n  component: CartelleComponent,\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/components/modal/modal.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<ModalComponent>",
                 "defaultValue": "(args: ModalComponent) => ({\n    component: ModalComponent,\n    props: args,\n  })"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/search-agency/search-agency.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<SearchAgencyComponent>",
+                "defaultValue": "(args: SearchAgencyComponent) => ({\n    component: SearchAgencyComponent,\n    props: args,\n  })"
             },
             {
                 "name": "Template",
@@ -2159,28 +2197,6 @@
                     "defaultValue": "(args: CaricadocumentoComponent) => ({\n    component: CaricadocumentoComponent,\n    props: args,\n  })"
                 }
             ],
-            "src/app/components/cartelle/cartelle.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/cartelle/cartelle.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/cartelle/cartelle.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<CartelleComponent>",
-                    "defaultValue": "(args: CartelleComponent) => ({\n  component: CartelleComponent,\n  props: args,\n})"
-                }
-            ],
             "src/app/components/head/head.stories.ts": [
                 {
                     "name": "Default",
@@ -2203,6 +2219,28 @@
                     "defaultValue": "(args: HeadComponent) => ({\n    component: HeadComponent,\n    props: args,\n  })"
                 }
             ],
+            "src/app/components/cartelle/cartelle.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/cartelle/cartelle.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/cartelle/cartelle.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<CartelleComponent>",
+                    "defaultValue": "(args: CartelleComponent) => ({\n  component: CartelleComponent,\n  props: args,\n})"
+                }
+            ],
             "src/app/components/modal/modal.stories.ts": [
                 {
                     "name": "Default",
@@ -2223,6 +2261,28 @@
                     "deprecationMessage": "",
                     "type": "Story<ModalComponent>",
                     "defaultValue": "(args: ModalComponent) => ({\n    component: ModalComponent,\n    props: args,\n  })"
+                }
+            ],
+            "src/app/components/search-agency/search-agency.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/search-agency/search-agency.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/search-agency/search-agency.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<SearchAgencyComponent>",
+                    "defaultValue": "(args: SearchAgencyComponent) => ({\n    component: SearchAgencyComponent,\n    props: args,\n  })"
                 }
             ],
             "src/app/components/select/select.stories.ts": [
@@ -2726,6 +2786,26 @@
                 "name": "SearchAgencyComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/16",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/search-agency/search-agency.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/search-agency/search-agency.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
