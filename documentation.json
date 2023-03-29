@@ -1175,7 +1175,7 @@
         },
         {
             "name": "SearchAgencyComponent",
-            "id": "component-SearchAgencyComponent-7c8d686f41c48531ef429780eb519485af5ebac4b206053e837ba82fdcbf60f18f8edb04ade3b5b67c87c8591f35a5451803316aafb80cdba8d5cc58ca8dc184",
+            "id": "component-SearchAgencyComponent-fc4d43fbc70243911a87ede5dd22a5d84a7957ed8efb5ea910c8bf6a7dd22d08a7dc74c01dfa7ce8cb0976293851a5384d41af1a42000144e2a05a1f6daf5959",
             "file": "src/app/components/search-agency/search-agency.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1191,17 +1191,148 @@
                 "./search-agency.component.html"
             ],
             "viewProviders": [],
-            "inputsClass": [],
+            "inputsClass": [
+                {
+                    "name": "newCartelaItems",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string[]",
+                    "decorators": []
+                }
+            ],
             "outputsClass": [],
-            "propertiesClass": [],
+            "propertiesClass": [
+                {
+                    "name": "cartelaItems",
+                    "defaultValue": "[\n    { name: 'Garda 3301', type: 'Agenzia' },\n    { name: 'Garda 3302', type: 'Agenzia' },\n    { name: 'Garda 3303', type: 'Agenzia' },\n    { name: 'Garda 3304', type: 'Agenzia' },\n    { name: 'Garda 3305', type: 'Agenzia' },\n    { name: 'Garda 3306', type: 'Agenzia' },\n    { name: 'Garda 3307', type: 'Agenzia' },\n    { name: 'Garda 3301', type: 'Agenzia' },\n    { name: 'Garda 3302', type: 'Agenzia' },\n    { name: 'Garda 3303', type: 'Agenzia' },\n    { name: 'Garda 3304', type: 'Agenzia' },\n    { name: 'Garda 3305', type: 'Agenzia' },\n    { name: 'Garda 3306', type: 'Agenzia' },\n    { name: 'Garda 3307', type: 'Agenzia' },\n    { name: 'Garda 3301', type: 'Agenzia' },\n    { name: 'Garda 3302', type: 'Agenzia' },\n    { name: 'Garda 3303', type: 'Agenzia' },\n    { name: 'Garda 3304', type: 'Agenzia' },\n    { name: 'Garda 3305', type: 'Agenzia' },\n    { name: 'Garda 3306', type: 'Agenzia' },\n    { name: 'Garda 3307', type: 'Agenzia' },\n    { name: 'Garda 3301', type: 'Agenzia' },\n    { name: 'Garda 3302', type: 'Agenzia' },\n    { name: 'Garda 3303', type: 'Agenzia' },\n    { name: 'Garda 3304', type: 'Agenzia' },\n    { name: 'Garda 3305', type: 'Agenzia' },\n    { name: 'Garda 3306', type: 'Agenzia' },\n    { name: 'Garda 3307', type: 'Agenzia' },\n    { name: 'Garda 3301', type: 'Agenzia' },\n    { name: 'Garda 3302', type: 'Agenzia' },\n    { name: 'Garda 3303', type: 'Agenzia' },\n    { name: 'Garda 3304', type: 'Agenzia' },\n    { name: 'Garda 3305', type: 'Agenzia' },\n    { name: 'Garda 3306', type: 'Agenzia' },\n    { name: 'Garda 3307', type: 'Agenzia' },\n  ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "currentPage",
+                    "defaultValue": "1",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 52
+                },
+                {
+                    "name": "filteredCartelaItems",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                },
+                {
+                    "name": "filterText",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 54
+                },
+                {
+                    "name": "itemsPerPage",
+                    "defaultValue": "24",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 53
+                },
+                {
+                    "name": "Math",
+                    "defaultValue": "Math",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                },
+                {
+                    "name": "searchText",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 10
+                }
+            ],
             "methodsClass": [
+                {
+                    "name": "filteredItems",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "any[]",
+                    "typeParameters": [],
+                    "line": 82,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getTotalPages",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "number",
+                    "typeParameters": [],
+                    "line": 61,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getTotalPagesAfterFiltering",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "number",
+                    "typeParameters": [],
+                    "line": 65,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
                 {
                     "name": "ngOnInit",
                     "args": [],
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 12,
+                    "line": 58,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onNextPage",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 69,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onPrevPage",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 76,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -1213,11 +1344,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-search-agency',\n  templateUrl: './search-agency.component.html',\n  styleUrls: ['./search-agency.component.css']\n})\nexport class SearchAgencyComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "sourceCode": "import { Component, OnInit, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-search-agency',\n  templateUrl: './search-agency.component.html',\n  styleUrls: ['./search-agency.component.css']\n})\nexport class SearchAgencyComponent implements OnInit {\n  filteredCartelaItems: any[] = [];\n  searchText: string = '';\n  Math = Math;\n  @Input() newCartelaItems: string[] = [];\n\n  cartelaItems = [\n    { name: 'Garda 3301', type: 'Agenzia' },\n    { name: 'Garda 3302', type: 'Agenzia' },\n    { name: 'Garda 3303', type: 'Agenzia' },\n    { name: 'Garda 3304', type: 'Agenzia' },\n    { name: 'Garda 3305', type: 'Agenzia' },\n    { name: 'Garda 3306', type: 'Agenzia' },\n    { name: 'Garda 3307', type: 'Agenzia' },\n    { name: 'Garda 3301', type: 'Agenzia' },\n    { name: 'Garda 3302', type: 'Agenzia' },\n    { name: 'Garda 3303', type: 'Agenzia' },\n    { name: 'Garda 3304', type: 'Agenzia' },\n    { name: 'Garda 3305', type: 'Agenzia' },\n    { name: 'Garda 3306', type: 'Agenzia' },\n    { name: 'Garda 3307', type: 'Agenzia' },\n    { name: 'Garda 3301', type: 'Agenzia' },\n    { name: 'Garda 3302', type: 'Agenzia' },\n    { name: 'Garda 3303', type: 'Agenzia' },\n    { name: 'Garda 3304', type: 'Agenzia' },\n    { name: 'Garda 3305', type: 'Agenzia' },\n    { name: 'Garda 3306', type: 'Agenzia' },\n    { name: 'Garda 3307', type: 'Agenzia' },\n    { name: 'Garda 3301', type: 'Agenzia' },\n    { name: 'Garda 3302', type: 'Agenzia' },\n    { name: 'Garda 3303', type: 'Agenzia' },\n    { name: 'Garda 3304', type: 'Agenzia' },\n    { name: 'Garda 3305', type: 'Agenzia' },\n    { name: 'Garda 3306', type: 'Agenzia' },\n    { name: 'Garda 3307', type: 'Agenzia' },\n    { name: 'Garda 3301', type: 'Agenzia' },\n    { name: 'Garda 3302', type: 'Agenzia' },\n    { name: 'Garda 3303', type: 'Agenzia' },\n    { name: 'Garda 3304', type: 'Agenzia' },\n    { name: 'Garda 3305', type: 'Agenzia' },\n    { name: 'Garda 3306', type: 'Agenzia' },\n    { name: 'Garda 3307', type: 'Agenzia' },\n  ];\n\n  currentPage = 1;\n  itemsPerPage = 24;\n  filterText = '';\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n  getTotalPages(): number {\n    return Math.ceil(this.cartelaItems.length / this.itemsPerPage);\n  }\n\n  getTotalPagesAfterFiltering(): number {\n    return Math.ceil(this.filteredCartelaItems.length / this.itemsPerPage);\n  }\n\n  onNextPage(): void {\n    const totalPages = this.getTotalPages();\n    if (this.currentPage < totalPages) {\n      this.currentPage++;\n    }\n  }\n\n  onPrevPage(): void {\n    if (this.currentPage > 1) {\n      this.currentPage--;\n    }\n  }\n\n  filteredItems(): any[] {\n    const startIndex = (this.currentPage - 1) * this.itemsPerPage;\n    const endIndex = startIndex + this.itemsPerPage;\n    const filteredItems = this.cartelaItems\n      .filter(item => {\n        const searchText = this.searchText.toLowerCase();\n        return item.name.toLowerCase().includes(searchText) || item.type.toLowerCase().includes(searchText);\n      });\n    console.log(filteredItems);\n    this.filteredCartelaItems = filteredItems.slice(startIndex, endIndex);\n    console.log(startIndex, endIndex)\n    return this.filteredCartelaItems;\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "",
+                    "data": ".maco {\n    width:15%;\n    height:113px;\n    box-shadow: 1px 1px 10px rgba(0, 32, 92, 0.15);\n    border-radius: 5px;\n}\n\n.borderize {\n    border: 1px solid #00205C;\n    width:47%;\n}",
                     "styleUrl": "./search-agency.component.css"
                 }
             ],
@@ -1228,12 +1359,12 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 8
+                "line": 54
             },
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<p>search-agency works!</p>\n"
+            "templateData": "<div class=\"mt-20 mx-24\">\n  <h2 class=\"text-vittNavyBlue not-italic font-bold text-3xl font-vitt\">Seleziona l’agenzia </h2>\n  <h2 class=\"text-vittNavyBlue not-italic font-bold text-2xl leading-8 font-vitt\">Agenzie</h2>\n  <h2 class=\"text-vittNavyBlue not-italic font-bold text-sm leading-5 font-vitt\">Seleziona l’agenzia</h2>\n  <div class=\"flex flex-row justify-between rounded borderize mb-6\">\n    <input type=\"text\" [(ngModel)]=\"searchText\" placeholder=\"Cerca agenzia per nome, codice\" class=\"px-2 py-3\tw-full tracking-wider placeholder-vittNavyBlue border-none\" />\n      <img class=\"mr-2\" src=\"/assets/icons/search.svg\" alt=\"search icon\">\n  </div>\n  <div class=\"flex flex-wrap gap-3 w-full\">\n    <div *ngFor=\"let item of filteredItems()\" class=\"flex items-center rounded-lg bg-white cursor-pointer maco\">\n      <img class=\"w-12 h-12 my-3.5 ml-4\" src=\"/assets/icons/cartelle_icon.svg\" alt=\"icon\" />\n      <div class=\"flex flex-col gap-1 ml-2\">\n        <span class=\"not-italic font-bold text-xs text-vittNavyBlue mt-1\">{{ item.type }}</span>\n        <span class=\"not-italic font-bold text-base font-vitt text-vittNavyBlue tracking-wide\">{{ item.name }}</span>\n      </div>\n    </div>\n  </div>\n  <div class=\"flex justify-between mt-4\" *ngIf=\"!searchText\">\n    <div class=\"font-vitt h-1 not-italic font-bold text-xs leading-4 text-vittNavyBlue ml-8\">\n      {{ (currentPage - 1) * itemsPerPage + 1 }} - {{\n      (currentPage - 1) * itemsPerPage + filteredCartelaItems.length }} of {{ cartelaItems.length }} agencies\n    </div>\n    <div class=\"flex items-center  mr-12 mb-20\">\n      <span class=\"font-vitt text-v mr-4 not-italic font-bold text-xs leading-4 text-vittSoftBlue\t\">PAGINA <span\n          id=\"currentPage\">{{ currentPage }}</span> DI {{ getTotalPages() }}</span>\n      <button class=\" bg-transparent rounded-lg border-none text-white text-vittDarkishBlue\" [disabled]=\"currentPage === 1\"\n        (click)=\"onPrevPage()\">\n        <i class=\"fas fa-chevron-left\"></i>\n      </button>\n      <button class=\" bg-transparent rounded-lg border-none text-white text-vittDarkishBlue mr-12\"\n        [disabled]=\"currentPage === getTotalPages()\" (click)=\"onNextPage()\">\n        <i class=\"fas fa-chevron-right\"></i>\n      </button>\n    </div>\n  </div>\n  <div class=\"flex justify-between\" *ngIf=\"searchText\">\n    <div class=\"font-vitt text-v mr-4 not-italic font-bold text-xs leading-4 text-vittDarkishBlue mt-4 ml-4\">\n      {{ filteredCartelaItems.length }} agenzie\n    </div> \n\n    <div class=\"flex items-center  mr-12 mb-20\">\n      <span class=\"font-vitt text-v mr-4 not-italic font-bold text-xs leading-4 text-vittSoftBlue\t\">PAGINA <span\n          id=\"currentPage\">{{ currentPage }}</span> DI {{ getTotalPagesAfterFiltering() }}</span>\n      <button class=\" bg-transparent rounded-lg border-none text-white text-vittDarkishBlue\" [disabled]=\"currentPage === 1\"\n        (click)=\"onPrevPage()\">\n        <i class=\"fas fa-chevron-left\"></i>\n      </button>\n      <button class=\" bg-transparent rounded-lg border-none text-white text-vittDarkishBlue mr-12\"\n        [disabled]=\"currentPage === getTotalPagesAfterFiltering()\" (click)=\"onNextPage()\">\n        <i class=\"fas fa-chevron-right\"></i>\n      </button>\n    </div>\n     \n  </div>\n\n</div>\n"
         },
         {
             "name": "SelectComponent",
@@ -1537,13 +1668,13 @@
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-4752f44fa4e38a30a400d0a61122956b733f8f93c8f5881ef428259a7caf43f00d7ed8e1982247dc674779c19b4df4ab45f2ffd9ab41efd26278adf1e1e2b9d9",
+            "id": "module-AppModule-7f0db30d358a8b112db8ae554632310aa73988c9affc8dfc0e27a3e6afbef25f318f7f132facd832122eaaa4bb91a0acdceb034c5376024faae91a84f10d6a7a",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { FormsModule } from '@angular/forms';\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { SelectComponent } from './components/select/select.component';\nimport { CartelleComponent } from './components/cartelle/cartelle.component';\nimport { TableComponent } from './components/table/table.component';\nimport { RouterModule, Routes } from '@angular/router';\nimport { CartelleDetailsComponent } from './components/cartelle/cartelle-details/cartelle-details.component';\nimport { HeadComponent } from './components/head/head.component';\nimport { MainpageComponent } from './components/mainpage/mainpage.component';\nimport { CaricadocumentoComponent } from './components/caricadocumento/caricadocumento.component';\nimport { CartelleSottocartelaComponent } from './components/cartelle/cartelle-sottocartela/cartelle-sottocartela.component';\nimport { CaricamentoComponent } from './components/toast/caricamento/caricamento.component';\nimport { SuccessoComponent } from './components/toast/successo/successo.component';\nimport { ErrorComponent } from './components/toast/error/error.component';\nimport { CartelleVuotaComponent } from './components/cartelle/cartelle-vuota/cartelle-vuota.component';\nimport { CartelleHeaderComponent } from './components/cartelle/cartelle-header/cartelle-header.component';\nimport { ModalComponent } from './components/modal/modal.component';\nimport { SearchAgencyComponent } from './components/search-agency/search-agency.component';\n\nconst appRoute: Routes = [\n  {path: '', redirectTo: 'Home', pathMatch: 'full'},\n  {path: 'Home', component: MainpageComponent },\n  {path: 'Details', component: TableComponent },\n  {path: 'Sottocartela', component: CartelleSottocartelaComponent },\n  {path: 'Toast', component: CaricamentoComponent },\n  {path: 'Vuota', component: CartelleVuotaComponent },\n  {path: 'Modal', component: ModalComponent },\n]\n\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    SelectComponent,\n    CartelleComponent,\n    TableComponent,\n    CartelleDetailsComponent,\n    HeadComponent,\n    MainpageComponent,\n    CaricadocumentoComponent,\n    CartelleSottocartelaComponent,\n    CaricamentoComponent,\n    SuccessoComponent,\n    ErrorComponent,\n    CartelleVuotaComponent,\n    CartelleHeaderComponent,\n    ModalComponent,\n    SearchAgencyComponent\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    FormsModule,\n    RouterModule.forRoot(appRoute)\n  ],\n  providers: [],\n  bootstrap: [AppComponent],\n  exports: [CartelleComponent],\n})\nexport class AppModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { FormsModule } from '@angular/forms';\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { SelectComponent } from './components/select/select.component';\nimport { CartelleComponent } from './components/cartelle/cartelle.component';\nimport { TableComponent } from './components/table/table.component';\nimport { RouterModule, Routes } from '@angular/router';\nimport { CartelleDetailsComponent } from './components/cartelle/cartelle-details/cartelle-details.component';\nimport { HeadComponent } from './components/head/head.component';\nimport { MainpageComponent } from './components/mainpage/mainpage.component';\nimport { CaricadocumentoComponent } from './components/caricadocumento/caricadocumento.component';\nimport { CartelleSottocartelaComponent } from './components/cartelle/cartelle-sottocartela/cartelle-sottocartela.component';\nimport { CaricamentoComponent } from './components/toast/caricamento/caricamento.component';\nimport { SuccessoComponent } from './components/toast/successo/successo.component';\nimport { ErrorComponent } from './components/toast/error/error.component';\nimport { CartelleVuotaComponent } from './components/cartelle/cartelle-vuota/cartelle-vuota.component';\nimport { CartelleHeaderComponent } from './components/cartelle/cartelle-header/cartelle-header.component';\nimport { ModalComponent } from './components/modal/modal.component';\nimport { SearchAgencyComponent } from './components/search-agency/search-agency.component';\n\nconst appRoute: Routes = [\n  {path: '', redirectTo: 'Home', pathMatch: 'full'},\n  {path: 'Home', component: MainpageComponent },\n  {path: 'Details', component: TableComponent },\n  {path: 'Sottocartela', component: CartelleSottocartelaComponent },\n  {path: 'Toast', component: CaricamentoComponent },\n  {path: 'Vuota', component: CartelleVuotaComponent },\n  {path: 'Modal', component: ModalComponent },\n  {path: 'SearchAgency', component: SearchAgencyComponent },\n]\n\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    SelectComponent,\n    CartelleComponent,\n    TableComponent,\n    CartelleDetailsComponent,\n    HeadComponent,\n    MainpageComponent,\n    CaricadocumentoComponent,\n    CartelleSottocartelaComponent,\n    CaricamentoComponent,\n    SuccessoComponent,\n    ErrorComponent,\n    CartelleVuotaComponent,\n    CartelleHeaderComponent,\n    ModalComponent,\n    SearchAgencyComponent\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    FormsModule,\n    RouterModule.forRoot(appRoute)\n  ],\n  providers: [],\n  bootstrap: [AppComponent],\n  exports: [CartelleComponent],\n})\nexport class AppModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -1715,7 +1846,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/table/table.stories.ts",
+                "file": "src/app/components/select/select.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1725,7 +1856,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/select/select.stories.ts",
+                "file": "src/app/components/table/table.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1945,21 +2076,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/table/table.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<TableComponent>",
-                "defaultValue": "(args: TableComponent) => ({\n    component: TableComponent,\n    props: args,\n  })"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/components/select/select.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<SelectComponent>",
                 "defaultValue": "(args: SelectComponent) => ({\n    component: SelectComponent,\n    props: args,\n  })"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/table/table.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TableComponent>",
+                "defaultValue": "(args: TableComponent) => ({\n    component: TableComponent,\n    props: args,\n  })"
             },
             {
                 "name": "Template",
@@ -2094,28 +2225,6 @@
                     "defaultValue": "(args: ModalComponent) => ({\n    component: ModalComponent,\n    props: args,\n  })"
                 }
             ],
-            "src/app/components/table/table.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/table/table.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/table/table.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<TableComponent>",
-                    "defaultValue": "(args: TableComponent) => ({\n    component: TableComponent,\n    props: args,\n  })"
-                }
-            ],
             "src/app/components/select/select.stories.ts": [
                 {
                     "name": "Default",
@@ -2136,6 +2245,28 @@
                     "deprecationMessage": "",
                     "type": "Story<SelectComponent>",
                     "defaultValue": "(args: SelectComponent) => ({\n    component: SelectComponent,\n    props: args,\n  })"
+                }
+            ],
+            "src/app/components/table/table.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/table/table.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/table/table.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<TableComponent>",
+                    "defaultValue": "(args: TableComponent) => ({\n    component: TableComponent,\n    props: args,\n  })"
                 }
             ],
             "src/app/components/cartelle/cartelle-vuota/cartella-vuota.stories.ts": [
@@ -2594,7 +2725,7 @@
                 "linktype": "component",
                 "name": "SearchAgencyComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/16",
                 "status": "low"
             },
             {

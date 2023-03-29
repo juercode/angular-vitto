@@ -6,6 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./search-agency.component.css']
 })
 export class SearchAgencyComponent implements OnInit {
+
+  totalPages: number = 0;
   filteredCartelaItems: any[] = [];
   searchText: string = '';
   Math = Math;
@@ -58,17 +60,12 @@ export class SearchAgencyComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getTotalPages(): number {
-    return Math.ceil(this.cartelaItems.length / this.itemsPerPage);
-  }
-
-  getTotalPagesAfterFiltering(): number {
-    return Math.ceil(this.filteredCartelaItems.length / this.itemsPerPage);
+  setTotalPages(numberToSet: number): void {
+    this.totalPages = Math.ceil(numberToSet / this.itemsPerPage);
   }
 
   onNextPage(): void {
-    const totalPages = this.getTotalPages();
-    if (this.currentPage < totalPages) {
+    if (this.currentPage < this.totalPages) {
       this.currentPage++;
     }
   }
@@ -79,7 +76,7 @@ export class SearchAgencyComponent implements OnInit {
     }
   }
 
-  filteredItems(): any[] {
+  filteredItems(): { total: number, currentPageResults: any[] } {
     const startIndex = (this.currentPage - 1) * this.itemsPerPage;
     const endIndex = startIndex + this.itemsPerPage;
     const filteredItems = this.cartelaItems
@@ -87,7 +84,12 @@ export class SearchAgencyComponent implements OnInit {
         const searchText = this.searchText.toLowerCase();
         return item.name.toLowerCase().includes(searchText) || item.type.toLowerCase().includes(searchText);
       });
-    this.filteredCartelaItems = filteredItems.slice(startIndex, endIndex);
-    return this.filteredCartelaItems;
+
+    this.setTotalPages(filteredItems.length);
+
+    return {
+      total: filteredItems.length,
+      currentPageResults: filteredItems.slice(startIndex, endIndex)
+    };
   }
 }

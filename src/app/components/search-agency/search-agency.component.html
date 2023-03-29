@@ -7,7 +7,7 @@
       <img class="mr-2" src="/assets/icons/search.svg" alt="search icon">
   </div>
   <div class="flex flex-wrap gap-3 w-full">
-    <div *ngFor="let item of filteredItems()" class="flex items-center rounded-lg bg-white cursor-pointer maco">
+    <div *ngFor="let item of filteredItems().currentPageResults" class="flex items-center rounded-lg bg-white cursor-pointer maco">
       <img class="w-12 h-12 my-3.5 ml-4" src="/assets/icons/cartelle_icon.svg" alt="icon" />
       <div class="flex flex-col gap-1 ml-2">
         <span class="not-italic font-bold text-xs text-vittNavyBlue mt-1">{{ item.type }}</span>
@@ -17,40 +17,38 @@
   </div>
   <div class="flex justify-between mt-4" *ngIf="!searchText">
     <div class="font-vitt h-1 not-italic font-bold text-xs leading-4 text-vittNavyBlue ml-8">
-      {{ (currentPage - 1) * itemsPerPage + 1 }} - {{
-      (currentPage - 1) * itemsPerPage + filteredCartelaItems.length }} of {{ cartelaItems.length }} agencies
+{{ cartelaItems.length }} agencies
     </div>
     <div class="flex items-center  mr-12 mb-20">
-      <span class="font-vitt text-v mr-4 not-italic font-bold text-xs leading-4 text-vittSoftBlue	">PAGINA <span
-          id="currentPage">{{ currentPage }}</span> DI {{ getTotalPages() }}</span>
+      <span class="font-vitt text-v mr-4 not-italic font-bold text-xs leading-4 text-vittSoftBlue	">PAGINA <span>{{ currentPage }}</span> DI {{ totalPages }}</span>
       <button class=" bg-transparent rounded-lg border-none text-white text-vittDarkishBlue" [disabled]="currentPage === 1"
         (click)="onPrevPage()">
         <i class="fas fa-chevron-left"></i>
       </button>
       <button class=" bg-transparent rounded-lg border-none text-white text-vittDarkishBlue mr-12"
-        [disabled]="currentPage === getTotalPages()" (click)="onNextPage()">
+        [disabled]="currentPage === totalPages" (click)="onNextPage()">
         <i class="fas fa-chevron-right"></i>
       </button>
     </div>
   </div>
   <div class="flex justify-between" *ngIf="searchText">
     <div class="font-vitt text-v mr-4 not-italic font-bold text-xs leading-4 text-vittDarkishBlue mt-4 ml-4">
-      {{ filteredCartelaItems.length }} agenzie
-    </div> 
+      {{ filteredItems().currentPageResults.length }} di {{ filteredItems().total }} agenzie
+    </div>
 
     <div class="flex items-center  mr-12 mb-20">
       <span class="font-vitt text-v mr-4 not-italic font-bold text-xs leading-4 text-vittSoftBlue	">PAGINA <span
-          id="currentPage">{{ currentPage }}</span> DI {{ getTotalPagesAfterFiltering() }}</span>
+          id="currentPage">{{ currentPage }}</span> DI {{ totalPages }}</span>
       <button class=" bg-transparent rounded-lg border-none text-white text-vittDarkishBlue" [disabled]="currentPage === 1"
         (click)="onPrevPage()">
         <i class="fas fa-chevron-left"></i>
       </button>
       <button class=" bg-transparent rounded-lg border-none text-white text-vittDarkishBlue mr-12"
-        [disabled]="currentPage === getTotalPagesAfterFiltering()" (click)="onNextPage()">
+        [disabled]="currentPage === totalPages" (click)="onNextPage()">
         <i class="fas fa-chevron-right"></i>
       </button>
     </div>
-     
+
   </div>
 
 </div>
